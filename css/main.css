@@ -1,0 +1,97 @@
+body{
+    background: url("../imagenes/aduriz.jpeg") no-repeat rgb(255, 105, 105);
+    background-size: auto 100%;
+    background-attachment: fixed ;
+    background-position: center;
+}
+#publicidad #pIzquierda{
+    margin: 0;
+    width: 55%;
+    height: 1000px;
+    background: yellow;
+    background-size: 500px 500px;
+    float: left;
+
+
+}
+
+div.cerca{
+    height: 75px;
+    width: 300px;
+    background: white;
+    background-size: 300px 75px;
+    float: right;    
+    text-align: center;
+    border-radius: 25px;
+
+
+}
+div.cerca p{
+    margin-top: 30px;
+}
+#cerrar{
+    margin-top: 12px;
+    margin-right: 12px;
+    height: 10px;
+    width: 10px;
+    float: right;
+    background: url("../imagenes/cerca_cruz.png") no-repeat;
+    background-size: 10px 10px;
+
+}
+#cerrar:hover{
+    background: url("../imagenes/cerca_cruz_gris.png") no-repeat;
+    background-size: 10px 10px;
+
+}
+div#login{
+    margin: 0 auto;
+    width: 55%;
+    height: 1000px;
+    background: white;
+    background-size: 500px 500px;
+    opacity: 0.8;
+
+}
+#login a,#login a:visited,#login a:hover{
+    margin-top: 2px;
+    color: #0044ff;
+    float: left;
+    text-decoration: none;
+    font-size: .7em;
+}
+#login label{
+    margin: 0 auto;
+    float: left;
+}
+#login legend{
+    border: none;
+    border-radius: 5px;
+}
+#login fieldset{
+    padding: 0 10px 10px;
+    border: 1px solid #666666;
+    border-radius: 8px;
+    padding-top: 10px;
+}
+#login input{
+    border: none;
+}
+#login #loginCaja{            
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+
+}
+div#login #loginTitulo{
+    height: 150px;
+    width: 200px;
+    background: url("../imagenes/athletic_logo.png") no-repeat;
+    background-position: 50%;
+    background-size: 100px 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    opacity: 1;
+
+}
+ 
