@@ -1,9 +1,57 @@
 body{
-    background: url("../imagenes/aduriz.jpeg") no-repeat rgb(255, 105, 105);
+    background: url("../imagenes/aduriz.jpeg") no-repeat #e01c1c;
     background-size: auto 100%;
     background-attachment: fixed ;
     background-position: center;
 }
+#principal{
+    margin: 0 auto;
+    width: 55%;
+    height: 1000px;
+    background: #ffffffbe;
+    background-size: 500px 500px;
+}
+/* ---- Menú --------------------------------------------------------------- */
+#menu {
+    background: transparent;
+    margin: 0 5px;
+    padding: 10px 0 0 0;
+  }
+  
+  #menu ul {
+    margin: 0 10px;
+    padding: 0;
+    list-style:none;
+  }
+  
+  #menu ul li {
+    margin: 0 5px 0 0;
+    padding: 0;
+    float:left;
+  }
+  
+  #menu ul li a {
+    display: block;
+    position: relative;
+    padding: 5px 15px;
+    border: 0;
+    background: transparent;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #menu ul li a:hover {
+    border-radius: 20px;
+    background: #ff212179;
+  }
+  
+  #menu ul li.seleccionado a {
+    background: transparent;
+    color: #ff0000;
+  }
+ /* ---- Otro --------------------------------------------------------------- */ 
 #publicidad #pIzquierda{
     margin: 0;
     width: 55%;
@@ -16,6 +64,7 @@ body{
 }
 
 div.cerca{
+    
     height: 75px;
     width: 300px;
     background: white;
@@ -80,12 +129,45 @@ div#login{
 #login #loginCaja{            
     margin: 0 auto;
     height: 250px;
-    width: 250px;
-
-}
-div#login #loginTitulo{
-    height: 150px;
-    width: 200px;
+    width: 250/* ---- Menú --------------------------------------------------------------- */
+    #menu {
+      background: #192666;
+      margin: 0 5px;
+      padding: 10px 0 0 0;
+    }
+    
+    #menu ul {
+      margin: 0 10px;
+      padding: 0;
+      list-style:none;
+    }
+    
+    #menu ul li {
+      margin: 0 5px 0 0;
+      padding: 0;
+      float:left;
+    }
+    
+    #menu ul li a {
+      display: block;
+      position: relative;
+      padding: 5px 15px;
+      border: 0;
+      background: #253575;
+      color: #B5C4E3;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    #menu ul li a:hover {
+      background: #31479B;
+    }
+    
+    #menu ul li.seleccionado a {
+      background: white;
+      color: #FF9000;
+    }0px;
     background: url("../imagenes/athletic_logo.png") no-repeat;
     background-position: 50%;
     background-size: 100px 100px;
