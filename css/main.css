@@ -64,7 +64,7 @@ body{
 }
 
 div.cerca{
-    
+    position: absolute;
     height: 75px;
     width: 300px;
     background: white;
@@ -97,9 +97,9 @@ div#login{
     margin: 0 auto;
     width: 55%;
     height: 1000px;
-    background: white;
+    background: #ffffffde;
     background-size: 500px 500px;
-    opacity: 0.8;
+    
 
 }
 

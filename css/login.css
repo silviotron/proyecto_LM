@@ -14,7 +14,7 @@ body{
     min-height: 400px;
     padding:3rem;
     border-radius:0.5rem;
-    border:1px solid #e1e1e1;
+    border:1px solid #ff0000b7;
     text-align: center;
   }
   .maindiv .Fields{
@@ -25,6 +25,7 @@ body{
   h1{
     font-size:24px;
     font-weight: 200px;
+    color: #000000ce;
   }
   h3{
     color:#202124;
@@ -45,7 +46,7 @@ body{
     transition: 0.1s;
   }
   .Before-FS:focus{
-    border: 2px solid #1a73e8;
+    border: 2px solid #ff0000b7;
     border-top:1px solid transparent;
   }
   .Fs-H{
@@ -60,13 +61,13 @@ body{
   }
   .Fieldset > h1 > span {
   float: left;
-  color:#1a73e8;
+  color:#ff0000b7;
   font-family: 'Google Sans','Noto Sans Myanmar UI','arial','sans-serif';
   font-size: 13px;
   }
   
   .Fieldset >h1::before{
-    border-top:2px solid #1a73e8;
+    border-top:2px solid #ff0000b7;
     content:' ';
     float: left;
     margin: 0.5em 2px 0 -1px;
@@ -75,15 +76,15 @@ body{
   }
   .Fieldset > h1::after{
   
-    border-top:2px solid #1a73e8;
+    border-top:2px solid #ff0000b7;
     content: ' ';
-  display: block;
-  height:1.5em;
-  left:2px;
-  margin: 0 1px 0 0;
-  overflow: hidden;
-  position: relative;
-  top:0.5em;
+    display: block;
+    height:1.5em;
+    left:2px;
+    margin: 0 1px 0 0;
+    overflow: hidden;
+    position: relative;
+    top:0.5em;
   }
   .placeholder{
     position: absolute;
@@ -109,16 +110,19 @@ body{
   }
   
   button{
+    float: right;
     cursor: pointer;
     border:1px solid transparent;
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42;
     color:white;
-    border-radius: 4px;
-    background-color: #1a73e8;
+    border-radius: 40px;
+    background-color: #ff0000b7;
     outline: none;
     min-width: 88px;
+    margin-top: 10px;
+    margin-right: -20px;
   
   }
 
@@ -126,4 +130,10 @@ body{
       text-decoration: none;
       float: left;
       margin-top: -5px;
+      color: #ff0000b7;
   }
+
+  .Fieldset input{
+      background-color: #ffffff36;
+
+}
