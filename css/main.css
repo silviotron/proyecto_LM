@@ -7,13 +7,13 @@ body{
 #principal{
     margin: 0 auto;
     width: 55%;
-    height: 1000px;
+    height: 2000px;
     background: #ffffffbe;
     background-size: 500px 500px;
 }
 /* ---- Cookies --------------------------------------------------------------- */
 .wrapper{
-  position: absolute;
+  position: fixed;
   bottom: 30px;
   left: 30px;
   max-width: 365px;
@@ -60,7 +60,7 @@ body{
   font-size: 16px;
   font-weight: 500;
   border-radius: 5px;
-  background: #FCBA7F;
+  background: #ff0000b7;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -71,7 +71,7 @@ body{
   margin: 0 10px;
 }
 .buttons a{
-  color: #FCBA7F;
+  color: #ff0000b7;
 }
 /* ---- Menú --------------------------------------------------------------- */
 #menu {
