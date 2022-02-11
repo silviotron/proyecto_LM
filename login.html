@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/login.css" />
     <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
+    
     <link rel="shortcut icon" href="./imagenes/athletic_logo.png">
     <title>athletic1898.com</title>    
 
@@ -20,20 +22,30 @@
     </div>
     <div id="login">
         
-        <div id="loginCaja">
-            <div id="loginTitulo">
-                <h2>iniciar sesión</h2>
+        <div class="maindiv">
+            <img src="./imagenes/athletic_logo.png">
+            <h1>Iniciar sesión</h1>
+            <h3></h3>
+            <div class="inputs">
+              <div class="Fields">
+                <div class="Fieldset">
+                  <input type="text" class="Before-FS" required="" autocomplete="off">
+                  <h1 class="Fs-H"><span>Correo electrónico</span></h1>
+                  <label class="placeholder">Correo electrónico</label>
+                </div>
+              </div>
+              <div class="Fields">
+                <div class="Fieldset">
+                  <input type="password" class="Before-FS" required="" >
+                  <h1 class="Fs-H"><span>Contraseña</span></h1>
+                  <label class="placeholder">Contraseña</label>
+                  <a href="#">¿Has olvidado tu contraseña?</a>
+                </div>
+              </div>
+    
             </div>
-            <fieldset>
-                <legend for="usuario">Usuario</legend> 
-                <input type="text" placeholder="Usuario" name="usuario" required> 
-            </fieldset>
-            <fieldset>
-                <legend for="contraseña">Contraseña</legend> 
-                <input type="password" placeholder="Contraseña" name="contraseña" required> 
-            </fieldset>              
-            <a href="https://youtu.be/R0lqowYD_Tg">¿Has olvidado tu contraseña?</a>  
-        </div>
+              <button>Iniciar sesion</button>
+          </div>
     </div>    
 </body>
 </html>

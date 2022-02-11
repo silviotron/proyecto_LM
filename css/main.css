@@ -102,34 +102,5 @@ div#login{
     opacity: 0.8;
 
 }
-#login a,#login a:visited,#login a:hover{
-    margin-top: 2px;
-    color: #0044ff;
-    float: left;
-    text-decoration: none;
-    font-size: .7em;
-}
-#login label{
-    margin: 0 auto;
-    float: left;
-}
-#login legend{
-    border: none;
-    border-radius: 5px;
-}
-#login fieldset{
-    padding: 0 10px 10px;
-    border: 1px solid #666666;
-    border-radius: 8px;
-    padding-top: 10px;
-}
-#login input{
-    border: none;
-}
-#login #loginCaja{            
-    margin: 0 auto;
-    height: 250px;
-    width: 250
 
-}
  
