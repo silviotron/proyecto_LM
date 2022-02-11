@@ -5,16 +5,26 @@ body{
     max-width: 200px;
     max-height: 100px;
   }
+  div#login{
+    margin: 0 auto;
+    width: 55%;
+    height: 900px;
+    background: #ffffffde;
+    background-size: 500px 500px;
+    min-width: 500px;
+    max-width: 500px;
+    
+
+}
   .maindiv{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    max-width: 500px;
     width: 350px;
     min-height: 400px;
+    min-width: 200px;
     padding:3rem;
     border-radius:0.5rem;
-    border:1px solid #ff0000b7;
+    border:1px solid transparent;
     text-align: center;
   }
   .maindiv .Fields{
@@ -110,7 +120,6 @@ body{
   }
   
   button{
-    float: right;
     cursor: pointer;
     border:1px solid transparent;
     padding: 6px 12px;
@@ -118,13 +127,21 @@ body{
     line-height: 1.42;
     color:white;
     border-radius: 40px;
-    background-color: #ff0000b7;
     outline: none;
     min-width: 88px;
     margin-top: 10px;
-    margin-right: -20px;
   
   }
+  button.volver{
+    background-color: #a3a3a3;
+    float: left;
+  }
+  button.iniciarSesion{
+    background-color: #ff0000b7;
+    float: right;
+    margin-right: -20px;
+  }
+  button:hover{opacity: 50%;}
 
   div.Fieldset a, div.Fieldset a:link{
       text-decoration: none;

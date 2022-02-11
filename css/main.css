@@ -1,5 +1,5 @@
 body{
-    background: url("../imagenes/aduriz.jpeg") no-repeat #e01c1c;
+    background: url("../imagenes/aduriz.jpeg") no-repeat #ff0000b7;
     background-size: auto 100%;
     background-attachment: fixed ;
     background-position: center;
@@ -93,14 +93,6 @@ div.cerca p{
     background-size: 10px 10px;
 
 }
-div#login{
-    margin: 0 auto;
-    width: 55%;
-    height: 1000px;
-    background: #ffffffde;
-    background-size: 500px 500px;
-    
 
-}
 
  
