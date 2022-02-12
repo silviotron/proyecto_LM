@@ -91,9 +91,10 @@ body{
   }
   
   #menu ul li {
-    margin: 0 5px 0 0;
+    margin: 10px 5px 5px 0px;
     padding: 0;
-    float:left;
+    display: inline-block;
+
   }
   
   #menu ul li a {
@@ -117,6 +118,10 @@ body{
     background: transparent;
     color: #ff0000;
   }
+  li#login_boton{
+    float: right;
+    display: block;
+  }
  /* ---- Otro --------------------------------------------------------------- */ 
 #publicidad #pIzquierda{
     margin: 0 auto;
@@ -138,10 +143,10 @@ body{
   }
 }
 .overlay {
-  animation: 5s ease-out 0s 1 slideInFromLeft;
+  animation: 8s ease-out 0s 1 slideInFromLeft;
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 15px;
   background: url("../imagenes/calamardo.jpg") white no-repeat;
   background-size: 150px;
   background-position: left;
@@ -149,6 +154,9 @@ body{
   opacity: 1;
   border-radius: 1.25em;
   float: right;
+}
+.overlay:hover{
+  opacity: 90%;
 }
 
 .overlay:target {
@@ -193,11 +201,10 @@ body{
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
   .wrapper{
-    font-size: 1.5vw;
-    margin: 0 auto;
-
+    font-size: 2.3vw;
+    transform: translateX(14.1vw);
   }
 }
 @media screen and (max-width: 1000px){
@@ -227,4 +234,11 @@ body{
   width: 12%;
   background-color: #0044ff9c;
   position: fixed;
+}
+/* ---- Horario --------------------------------------------------------------- */
+table#horario {
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  margin-top: 30px;
+
 }
