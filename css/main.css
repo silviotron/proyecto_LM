@@ -1,5 +1,5 @@
 body{
-    background: url("../imagenes/aduriz.jpeg") no-repeat #ff0000b7;
+    background: url("../imagenes/fondo_aduriz_publi.png") no-repeat #ff0000b7;
     background-size: auto 100%;
     background-attachment: fixed ;
     background-position: center;
@@ -11,7 +11,8 @@ body{
     width: 55%;
     background: #ffffffbe;
     background-size: 500px 500px;
-    height: 99%;
+    height: 100%;
+    min-width: 200px;
 }
 /* ---- Cookies --------------------------------------------------------------- */
 .wrapper{
@@ -207,3 +208,18 @@ body{
  .articulo img{
    width: 100%;
  }
+/* ---- anuncio --------------------------------------------------------------- */ 
+#anuncioIzquierda{
+  float: left;
+  height: 100%;
+  width: 12%;
+  background-color: #ffee00a8;
+  position: fixed;
+}
+#anuncioDerecha{
+  margin-right: 5px;
+  height: 100%;
+  width: 12%;
+  background-color: #0044ff9c;
+  position: fixed;
+}
