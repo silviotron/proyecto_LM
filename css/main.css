@@ -139,32 +139,36 @@ li#login_boton {
   }
 }
 .overlay {
-  animation: 8s ease-out 0s 1 slideInFromLeft;
+  /*animation: 8s ease-out 0s 1 slideInFromLeft;*/
   position: fixed;
   top: 15px;
   right: 15px;
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
   border-radius: 1.25em;
   float: right;
+  transform: translateX(-100vw);
 }
-#popup1.overlay{
+#popup1.overlay {
   background: url("../imagenes/calamardo.jpg") white no-repeat;
-  background-size: 150px;
+  background-size: 110px;
   background-position: left;
 }
-#popup2.overlay{
+#popup2.overlay {
   background: url("../imagenes/alonso.jpg") white no-repeat;
   background-size: 110px;
   background-position: left;
 }
 .overlay:hover {
-  opacity: 90%;
+  background-color: #ff0000;
 }
 
 .overlay:target {
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0);
+  transition: 3s;
+  transition-delay: 2s;
 }
 
 .popup {
@@ -178,7 +182,7 @@ li#login_boton {
 
 .popup h2 {
   margin-top: 0;
-  margin-left: 140px;
+  margin-left: 100px;
   margin-right: 30px;
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
@@ -199,11 +203,11 @@ li#login_boton {
 .popup .content {
   max-height: 30%;
   overflow: auto;
-  margin-left: 140px;
+  margin-left: 100px;
   margin-right: 30px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .wrapper {
     font-size: 2.3vw;
     transform: translateX(14.1vw);

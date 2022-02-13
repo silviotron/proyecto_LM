@@ -33,81 +33,89 @@
     <link rel="shortcut icon" href="./imagenes/athletic_logo.png" />
   </head>
 
-  <body>
-    <!-- cookies -->
-    <div class="wrapper">
-      <img src="./imagenes/cookie.png" alt="" />
-      <div class="content">
-        <header>Consentimiento de Cookies</header>
-        <p>
-          Esta web usa cookies para asegurarnos de que disfrutes de la mejor
-          experiencia en nuestra web.
-        </p>
-        <div class="buttons">
-          <button class="item">Estoy de acuerdo</button>
-          <a href="#" class="item">Leer más</a>
+  <body onload="window.location.href='#popup1'">
+      <!-- cookies -->
+      <div class="wrapper">
+        <img src="./imagenes/cookie.png" alt="" />
+        <div class="content">
+          <header>Consentimiento de Cookies</header>
+          <p>
+            Esta web usa cookies para asegurarnos de que disfrutes de la mejor
+            experiencia en nuestra web.
+          </p>
+          <div class="buttons">
+            <button class="item">Estoy de acuerdo</button>
+            <a href="#" class="item">Leer más</a>
+          </div>
         </div>
       </div>
-    </div>
-    <script src="./scripts/cookies.js"></script>
-    <!-- Popup -->
-    <div id="popup1" class="overlay">
-      <div class="popup">
-        <h2>Calamardo a 5Kms</h2>
-        <a class="close" href="#popup1">&times;</a>
-        <div class="content">que haces esta noche🔥🔥🔥.</div>
+      <script src="./scripts/cookies.js"></script>
+      <!-- Popup -->
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Calamardo a 5Kms</h2>
+          <a class="close" href="#popup2">&times;</a>
+          <div class="content">que haces esta noche🔥🔥🔥.</div>
+        </div>
       </div>
-    </div>
-    <!-- Contenedor principal-->
-    <div id="principal">
-      <!-- Menu -->
-      <div id="menu">
-        <ul>
-          <li class="seleccionado" role="button">
-            <a href="./index.html">Inicio</a>
-          </li>
-          <li><a href="./horario.html" role="button">Horario</a></li>
-          <li><a href="./index.html" role="button">Sobre mi</a></li>
-          <li><a href="./index.html" role="button">Fotos</a></li>
-          <li><a href="./index.html" role="button">Portfolio</a></li>
-          <li><a href="./index.html" role="button">Contacto</a></li>
-          <li id="login_boton">
-            <a href="./login.html" role="button">Iniciar sesión</a>
-          </li>
-        </ul>
-        <div class="clear"></div>
+      <div id="popup2" class="overlay">
+        <div class="popup">
+          <h2>Alonso a 3Kms</h2>
+          <a class="close" href="#popup1">&times;</a>
+          <div class="content">¿me echas una carrera🔥🔥🔥?.</div>
+        </div>
       </div>
-      <!-- contenido -->
-      <div class="articulo">
-        <h1>Dorsales 2022</h1>
-        <img src="./imagenes/athletic_poster.jpg" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Et
-          ultrices neque ornare aenean euismod elementum nisi quis. Consequat
-          nisl vel pretium lectus quam. Nunc pulvinar sapien et ligula
-          ullamcorper. Varius vel pharetra vel turpis nunc eget lorem dolor.
-          Nibh venenatis cras sed felis eget velit aliquet sagittis id. Auctor
-          elit sed vulputate mi sit amet mauris commodo. Facilisis gravida neque
-          convallis a cras semper. Convallis aenean et tortor at risus viverra
-          adipiscing at. Est ante in nibh mauris cursus mattis. Ipsum consequat
-          nisl vel pretium lectus quam id. Sapien eget mi proin sed libero enim
-          sed. Sit amet consectetur adipiscing elit ut aliquam purus. Sit amet
-          nisl purus in mollis nunc sed. Quisque id diam vel quam elementum.
-          Pellentesque dignissim enim sit amet venenatis.
-        </p>
-        <img src="./imagenes/athletic_dorsales.jpg" alt="" />
-        <p>
-          Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin.
-          Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Sagittis
-          orci a scelerisque purus semper. Purus gravida quis blandit turpis
-          cursus in hac habitasse platea. Id diam vel quam elementum pulvinar.
-          Eu sem integer vitae justo eget. Ligula ullamcorper malesuada proin
-          libero nunc consequat interdum. Turpis egestas maecenas pharetra
-          convallis posuere morbi. Et ligula ullamcorper malesuada proin libero
-          nunc. Vel pharetra vel turpis nunc.
-        </p>
-        <br /><br /><br />
+      <!-- Contenedor principal-->
+      <div id="principal">
+        <!-- Menu -->
+        <div id="menu">
+          <ul>
+            <li class="seleccionado" role="button">
+              <a href="./index.html">Inicio</a>
+            </li>
+            <li><a href="./horario.html" role="button">Horario</a></li>
+            <li><a href="./index.html" role="button">Sobre mi</a></li>
+            <li><a href="./index.html" role="button">Fotos</a></li>
+            <li><a href="./index.html" role="button">Portfolio</a></li>
+            <li><a href="./index.html" role="button">Contacto</a></li>
+            <li id="login_boton">
+              <a href="./login.html" role="button">Iniciar sesión</a>
+            </li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <!-- contenido -->
+        <div class="articulo">
+          <h1>Dorsales 2022</h1>
+          <img src="./imagenes/athletic_poster.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Et
+            ultrices neque ornare aenean euismod elementum nisi quis. Consequat
+            nisl vel pretium lectus quam. Nunc pulvinar sapien et ligula
+            ullamcorper. Varius vel pharetra vel turpis nunc eget lorem dolor.
+            Nibh venenatis cras sed felis eget velit aliquet sagittis id. Auctor
+            elit sed vulputate mi sit amet mauris commodo. Facilisis gravida
+            neque convallis a cras semper. Convallis aenean et tortor at risus
+            viverra adipiscing at. Est ante in nibh mauris cursus mattis. Ipsum
+            consequat nisl vel pretium lectus quam id. Sapien eget mi proin sed
+            libero enim sed. Sit amet consectetur adipiscing elit ut aliquam
+            purus. Sit amet nisl purus in mollis nunc sed. Quisque id diam vel
+            quam elementum. Pellentesque dignissim enim sit amet venenatis.
+          </p>
+          <img src="./imagenes/athletic_dorsales.jpg" alt="" />
+          <p>
+            Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada
+            proin. Sollicitudin ac orci phasellus egestas tellus rutrum tellus.
+            Sagittis orci a scelerisque purus semper. Purus gravida quis blandit
+            turpis cursus in hac habitasse platea. Id diam vel quam elementum
+            pulvinar. Eu sem integer vitae justo eget. Ligula ullamcorper
+            malesuada proin libero nunc consequat interdum. Turpis egestas
+            maecenas pharetra convallis posuere morbi. Et ligula ullamcorper
+            malesuada proin libero nunc. Vel pharetra vel turpis nunc.
+          </p>
+          <br /><br /><br />
+        </div>
       </div>
     </div>
   </body>
