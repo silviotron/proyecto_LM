@@ -1,21 +1,21 @@
-body{
-    background: url("../imagenes/fondo_aduriz_publi.jpg") no-repeat #ff0000b7;
-    background-size: 100% auto;
-    background-attachment: fixed ;
-    background-position: center;
-    font-size: 16px;
-    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+body {
+  background: url("../imagenes/fondo_aduriz_publi.jpg") no-repeat #ff0000b7;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 16px;
+  font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
 }
-#principal{
-    margin: 0 auto;
-    width: 55%;
-    background: #ffffffbe;
-    background-size: 500px 500px;
-    height: 100%;
-    min-width: 200px;
+#principal {
+  margin: 0 auto;
+  width: 55%;
+  background: #ffffffbe;
+  background-size: 500px 500px;
+  height: 100%;
+  min-width: 200px;
 }
 /* ---- Cookies --------------------------------------------------------------- */
-.wrapper{
+.wrapper {
   position: fixed;
   bottom: 1.9em;
   left: 1.9em;
@@ -23,40 +23,40 @@ body{
   background: #fff;
   padding: 1.56em 1.56em 1.58em 1.56em;
   border-radius: 0.9375em;
-  box-shadow: 0.0625em 0.4375em 0.875em -0.3125em rgba(0,0,0,0.15);
+  box-shadow: 0.0625em 0.4375em 0.875em -0.3125em rgba(0, 0, 0, 0.15);
   text-align: center;
   font-size: 1vw;
 }
-.wrapper.hide{
+.wrapper.hide {
   opacity: 0;
   pointer-events: none;
   transform: scale(0.8);
   transition: all 0.3s ease;
 }
-::selection{
+::selection {
   color: #fff;
-  background: #FCBA7F;
+  background: #fcba7f;
 }
-.wrapper img{
+.wrapper img {
   max-width: 5.625em;
 }
-.content header{
+.content header {
   font-size: 1.5625em;
   font-weight: 600;
 }
-.content{
+.content {
   margin-top: 0.625em;
 }
-.content p{
+.content p {
   color: #858585;
   margin: 0.3125em 0 1.25em 0;
 }
-.content .buttons{
+.content .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.buttons button{
+.buttons button {
   padding: 0.625em 1.25em;
   border: none;
   outline: none;
@@ -68,73 +68,69 @@ body{
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.buttons button:hover{
+.buttons button:hover {
   transform: scale(0.97);
 }
-.buttons .item{
+.buttons .item {
   margin: 0 0.625em;
 }
-.buttons a{
+.buttons a {
   color: #ff0000b7;
 }
 /* ---- Menú --------------------------------------------------------------- */
 #menu {
-    background: transparent;
-    margin: 0 5px;
-    padding: 10px 0 0 0;
-  }
-  
-  #menu ul {
-    margin: 0 10px;
-    padding: 0;
-    list-style:none;
-  }
-  
-  #menu ul li {
-    margin: 10px 5px 5px 0px;
-    padding: 0;
-    display: inline-block;
-
-  }
-  
-  #menu ul li a {
-    padding: 5px 15px;
-    border: 0;
-    background: transparent;
-    color: #000000;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  #menu ul li a:hover {
-    border-radius: 20px;
-    background:#ff0000b7;
-    color: white;
-    
-  }
-  
-  #menu ul li.seleccionado a {
-    background: transparent;
-    color: #ff0000;
-  }
-  li#login_boton{
-    float: right;
-    display: block;
-  }
- /* ---- Otro --------------------------------------------------------------- */ 
-#publicidad #pIzquierda{
-    margin: 0 auto;
-    width: 55%;
-    height: 1000px;
-    background: yellow ;
-    background-size: 500px 500px;
-
-
+  background: transparent;
+  margin: 0 5px;
+  padding: 10px 0 0 0;
 }
 
- /* ---- Popup --------------------------------------------------------------- */ 
- @keyframes slideInFromLeft {
+#menu ul {
+  margin: 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+#menu ul li {
+  margin: 10px 5px 5px 0px;
+  padding: 0;
+  display: inline-block;
+}
+
+#menu ul li a {
+  padding: 5px 10px;
+  border: 0;
+  background: transparent;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#menu ul li a:hover {
+  border-radius: 20px;
+  background: #ff0000b7;
+  color: white;
+}
+
+#menu ul li.seleccionado a {
+  background: transparent;
+  color: #ff0000;
+}
+li#login_boton {
+  float: right;
+  display: block;
+}
+/* ---- Otro --------------------------------------------------------------- */
+#publicidad #pIzquierda {
+  margin: 0 auto;
+  width: 55%;
+  height: 1000px;
+  background: yellow;
+  background-size: 500px 500px;
+}
+
+/* ---- Popup --------------------------------------------------------------- */
+@keyframes slideInFromLeft {
   0% {
     transform: translateX(-500vw);
   }
@@ -155,7 +151,7 @@ body{
   border-radius: 1.25em;
   float: right;
 }
-.overlay:hover{
+.overlay:hover {
   opacity: 90%;
 }
 
@@ -182,8 +178,8 @@ body{
 }
 .popup .close {
   position: absolute;
-  top: .25em;
-  right: .75em;
+  top: 0.25em;
+  right: 0.75em;
   transition: all 200ms;
   font-size: 1.875em;
   font-weight: bold;
@@ -200,35 +196,34 @@ body{
   margin-right: 30px;
 }
 
-
-@media screen and (max-width: 700px){
-  .wrapper{
+@media screen and (max-width: 700px) {
+  .wrapper {
     font-size: 2.3vw;
     transform: translateX(14.1vw);
   }
 }
-@media screen and (max-width: 1000px){
-  body{
-    background-size: auto 100% ;
+@media screen and (max-width: 1000px) {
+  body {
+    background-size: auto 100%;
   }
 }
 
- /* ---- Artículo --------------------------------------------------------------- */ 
- div.articulo{
-   margin: 5em 1em 1em 1em;
- }
- .articulo img{
-   width: 100%;
- }
-/* ---- anuncio --------------------------------------------------------------- */ 
-#anuncioIzquierda{
+/* ---- Artículo --------------------------------------------------------------- */
+div.articulo {
+  margin: 5em 1em 1em 1em;
+}
+.articulo img {
+  width: 100%;
+}
+/* ---- anuncio --------------------------------------------------------------- */
+#anuncioIzquierda {
   float: left;
   height: 100%;
   width: 12%;
   background-color: #ffee00a8;
   position: fixed;
 }
-#anuncioDerecha{
+#anuncioDerecha {
   margin-right: 5px;
   height: 100%;
   width: 12%;
@@ -237,8 +232,7 @@ body{
 }
 /* ---- Horario --------------------------------------------------------------- */
 table#horario {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   margin: auto;
   margin-top: 30px;
-
 }
