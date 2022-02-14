@@ -11,7 +11,7 @@ body {
   width: 55%;
   background: #ffffffbe;
   background-size: 500px 500px;
-  height: 100%;
+  height: auto;
   min-width: 200px;
 }
 /* ---- Cookies --------------------------------------------------------------- */
@@ -92,7 +92,6 @@ body {
 
 #menu ul li {
   margin: 10px 5px 5px 0px;
-  padding: 0;
   display: inline-block;
 }
 
@@ -104,10 +103,11 @@ body {
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 #menu ul li a:hover {
-  border-radius: 20px;
   background: #ff0000b7;
   color: white;
 }
@@ -148,6 +148,8 @@ li#login_boton {
   border-radius: 1.25em;
   float: right;
   transform: translateX(-100vw);
+  box-shadow: 0.0625em 0.4375em 0.875em -0.3125em rgba(0, 0, 0, 0.15);
+  z-index: 1000;
 }
 #popup1.overlay {
   background: url("../imagenes/calamardo.jpg") white no-repeat;
