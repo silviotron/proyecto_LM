@@ -160,23 +160,24 @@ li#login_boton {
   background-position: left;
 }
 .overlay:hover {
-  background-color: #ff0000;
+  opacity: 10%;
 }
 
 .overlay:target {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.9;
   transform: translate(0);
   transition: 3s;
   transition-delay: 2s;
+}
+.popup:hover {
+  background-color: #008cff4d;
 }
 
 .popup {
   float: right;
   padding: 1.25em;
   background: transparent;
-  border-radius: 1.25em;
-
   position: relative;
 }
 
