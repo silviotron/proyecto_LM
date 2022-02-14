@@ -5,6 +5,7 @@ body {
   background-position: center;
   font-size: 16px;
   font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+  cursor: crosshair;
 }
 #principal {
   margin: 0 auto;
@@ -150,6 +151,7 @@ li#login_boton {
   transform: translateX(-100vw);
   box-shadow: 0.0625em 0.4375em 0.875em -0.3125em rgba(0, 0, 0, 0.15);
   z-index: 1000;
+  cursor: not-allowed;
 }
 #popup1.overlay {
   background: url("../imagenes/calamardo.jpg") white no-repeat;
