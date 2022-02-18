@@ -24,6 +24,38 @@
 </head>
 
 <body onload="window.location.href='#popup1'">
+  <!-- modos -->
+  <script>
+    // Get the root element
+    var r = document.querySelector(':root');  
+    // Create a function for setting a variable value
+    function oscuro_set() {
+      // Set the value of variable --blue to another value (in this case "lightblue")
+      r.style.setProperty('--main-color', 'lightblue');
+      r.style.setProperty('--second-color', '#0000000');
+      r.style.setProperty('--text-color', '#ffffff');
+      r.style.setProperty('--bg-color', '#000000');
+
+    }
+    function claro_set() {
+      // Set the value of variable --blue to another value (in this case "lightblue")
+      r.style.setProperty('--main-color', '#ff0000b7');
+      r.style.setProperty('--second-color', '#ffffff');
+      r.style.setProperty('--text-color', '#000000');
+      r.style.setProperty('--bg-color', '#ffffffbe');
+
+    }
+    </script> 
+  <div id="modos">
+    <label class="contenedor">Claro
+      <input id="claro" type="radio" checked="checked" name="radio" onclick="claro_set()">
+      <span class="checkmark"></span>
+    </label>
+    <label class="contenedor">Oscuro
+      <input id="oscuro" type="radio" name="radio" onclick="oscuro_set()">
+      <span class="checkmark"></span>
+    </label>   
+  </div>
   <!-- cookies -->
   <div class="wrapper">
     <img src="./imagenes/cookie.png" alt="" />
