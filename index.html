@@ -21,20 +21,23 @@
   <title>athletic1898.com</title>
   <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
   <link rel="shortcut icon" href="./imagenes/athletic_logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  
 </head>
 
-<body onload="window.location.href='#popup1'">
+<body onload="window.location.href='#popup1'; modo_set();">
   <!-- modos -->
   <script>
     // Get the root element
-    var r = document.querySelector(':root');  
+    var r = document.querySelector(':root'); 
     // Create a function for setting a variable value
     function oscuro_set() {
       // Set the value of variable --blue to another value (in this case "lightblue")
-      r.style.setProperty('--main-color', 'lightblue');
-      r.style.setProperty('--second-color', '#0000000');
+      r.style.setProperty('--main-color', '#ff0000b7');
+      r.style.setProperty('--second-color', '#000000');
       r.style.setProperty('--text-color', '#ffffff');
-      r.style.setProperty('--bg-color', '#000000');
+      r.style.setProperty('--bg-color', '#000000be');
+      r.style.setProperty('--cookie-filter', 'invert(1)');
 
     }
     function claro_set() {
@@ -43,18 +46,27 @@
       r.style.setProperty('--second-color', '#ffffff');
       r.style.setProperty('--text-color', '#000000');
       r.style.setProperty('--bg-color', '#ffffffbe');
+      r.style.setProperty('--cookie-filter', 'invert(0)');
 
     }
+    function modo_set() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    oscuro_set();
+  } else {
+    claro_set();
+  }
+}
     </script> 
+  <!-- modos -->    
   <div id="modos">
-    <label class="contenedor">Claro
-      <input id="claro" type="radio" checked="checked" name="radio" onclick="claro_set()">
-      <span class="checkmark"></span>
+    
+    <label class="switch">
+      <input type="checkbox" id="myCheck" onclick="modo_set()">
+      <span class="slider"></i></span>
     </label>
-    <label class="contenedor">Oscuro
-      <input id="oscuro" type="radio" name="radio" onclick="oscuro_set()">
-      <span class="checkmark"></span>
-    </label>   
+
   </div>
   <!-- cookies -->
   <div class="wrapper">

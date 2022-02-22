@@ -3,9 +3,11 @@
   --second-color: #ffffff;
   --text-color: #000000;
   --bg-color: #ffffffbe;
+  --test-color: #000000d0;
+  --cookie-filter: invert(0);
 }
 body {
-  background: url("../imagenes/fondo_aduriz.jpeg") no-repeat var(--main-color);
+  background: url("../imagenes/fondo_aduriz.jpeg") no-repeat var(--second-color);
   background-size: auto 100%;
   background-attachment: fixed;
   background-position: center;
@@ -24,12 +26,15 @@ body {
   min-width: 200px;
 }
 /* ---- Cookies --------------------------------------------------------------- */
+.wrapper img {
+  filter: var(--cookie-filter);
+}
 .wrapper {
   position: fixed;
   bottom: 1.9em;
   left: 1.9em;
   max-width: 23em;
-  background: var(--second-color);
+  background: var(--bg-color);
   padding: 1.56em 1.56em 1.58em 1.56em;
   border-radius: 0.9375em;
   box-shadow: 0.0625em 0.4375em 0.875em -0.3125em rgba(0, 0, 0, 0.15);
@@ -86,6 +91,9 @@ body {
 .buttons a {
   color: var(--main-color);
 }
+.wrapper + img {
+  filter: var(--second-color);
+}
 /* ---- Menú --------------------------------------------------------------- */
 #menu {
   background: transparent;
@@ -141,7 +149,7 @@ li#login_boton {
 /* ---- Popup --------------------------------------------------------------- */
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-500vw);
+    transform: translateX(-100vw);
   }
   100% {
     transform: translateX(0);
@@ -156,18 +164,17 @@ li#login_boton {
   opacity: 0;
   border-radius: 1.25em;
   float: right;
-  transform: translateX(-100vw);
   box-shadow: 0.0625em 0.4375em 0.875em -0.3125em rgba(0, 0, 0, 0.15);
   z-index: 1000;
   cursor: not-allowed;
 }
 #popup1.overlay {
-  background: url("../imagenes/calamardo.jpg") var(--second-color) no-repeat;
+  background: url("../imagenes/calamardo.jpg") var(--bg-color) no-repeat;
   background-size: 110px;
   background-position: left;
 }
 #popup2.overlay {
-  background: url("../imagenes/alonso.jpg") var(--second-color) no-repeat;
+  background: url("../imagenes/alonso.jpg") var(--bg-color) no-repeat;
   background-size: 110px;
   background-position: left;
 }
@@ -178,9 +185,7 @@ li#login_boton {
 .overlay:target {
   visibility: visible;
   opacity: 0.9;
-  transform: translate(0);
-  transition: 3s;
-  transition-delay: 2s;
+  animation: 5s ease-out 1 slideInFromLeft;
 }
 .popup:hover {
   background-color: #008cff4d;
@@ -257,3 +262,55 @@ table#horario {
   margin-top: 30px;
 }
 /* ---- modo claro/oscuro --------------------------------------------------------------- */
+.switch {
+  position: fixed;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
