@@ -9,15 +9,17 @@
   --moon-color: transparent;
 }
 body {
-  background: url("../imagenes/fondo_aduriz.jpeg") no-repeat var(--second-color);
+  background: url("../imagenes/fondo_aduriz.jpeg") no-repeat fixed center,
+    linear-gradient(#ff0000b7, black);
   background-size: auto 100%;
-  background-attachment: fixed;
-  background-position: center;
+  background-blend-mode: luminosity;
   font-size: 16px;
   font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
   cursor: crosshair;
   color: var(--text-color);
   filter: none;
+  margin: 0;
+  padding: 0;
 }
 #principal {
   margin: 0 auto;
@@ -26,6 +28,12 @@ body {
   background-size: 500px 500px;
   height: auto;
   min-width: 200px;
+  padding: 20px;
+}
+p {
+  margin: 20px 0;
+  text-align: justify;
+  text-justify: newspaper;
 }
 /* ---- Cookies --------------------------------------------------------------- */
 .wrapper img {
@@ -98,24 +106,27 @@ body {
 }
 /* ---- Menú --------------------------------------------------------------- */
 #menu {
-  background: transparent;
-  margin: 0 5px;
-  padding: 10px 0 0 0;
+  background: var(--second-color);
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  float: left;
+  text-align: center;
+  display: inline;
 }
 
 #menu ul {
-  margin: 0 10px;
-  padding: 0;
+  margin: 0;
+  padding: 10px;
   list-style: none;
 }
 
 #menu ul li {
-  margin: 10px 5px 5px 0px;
+  margin: 0;
   display: inline-block;
 }
 
 #menu ul li a {
-  padding: 5px 10px;
   border: 0;
   background: transparent;
   color: var(--text-color);
@@ -136,8 +147,6 @@ body {
   color: var(--main-color);
 }
 li#login_boton {
-  float: right;
-  display: block;
 }
 /* ---- Otro --------------------------------------------------------------- */
 #publicidad #pIzquierda {
@@ -316,8 +325,8 @@ div#modos {
   background-color: var(--bg-color);
   border: none;
   border-radius: 10px;
-  display: line;
-  position: fixed;
+  float: left;
+  position: relative;
 }
 i {
   font-size: 25px;

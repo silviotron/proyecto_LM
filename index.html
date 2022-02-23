@@ -74,15 +74,37 @@
         }
       }
     </script>
-    <!-- modos -->
-    <div id="modos">
-      <i class="bi bi-brightness-high"></i>
-      <i class="bi bi-moon"></i>
-      <label class="switch">
-        <input type="checkbox" id="myCheck" onclick="modo_set()" />
-        <span class="slider"></span>
-      </label>
+    <!-- Menu -->
+    <div id="menu">
+      <!-- modos -->
+      <div id="modos">
+        <i class="bi bi-brightness-high"></i>
+        <i class="bi bi-moon"></i>
+        <label class="switch">
+          <input type="checkbox" id="myCheck" onclick="modo_set()" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <ul>
+        <li></li>
+        <li class="seleccionado" role="button">
+          <a href="./index.html">Inicio</a>
+        </li>
+        <li><a href="./horario.html" role="button">Horario</a></li>
+        <li><a href="./index.html" role="button">Sobre mi</a></li>
+        <li><a href="./index.html" role="button">Fotos</a></li>
+        <li><a href="./index.html" role="button">Portfolio</a></li>
+        <li><a href="./index.html" role="button">Contacto</a></li>
+        <li id="login_boton">
+          <a href="./login.html" role="button">Iniciar sesión</a>
+        </li>
+        <li id="signup_boton">
+          <a href="./signup.html" role="button">Registrarse</a>
+        </li>
+      </ul>
+      <div class="clear"></div>
     </div>
+
     <!-- cookies -->
     <div class="wrapper">
       <img src="./imagenes/cookie.png" alt="" />
@@ -117,23 +139,6 @@
     </div>
     <!-- Contenedor principal-->
     <div id="principal">
-      <!-- Menu -->
-      <div id="menu">
-        <ul>
-          <li class="seleccionado" role="button">
-            <a href="./index.html">Inicio</a>
-          </li>
-          <li><a href="./horario.html" role="button">Horario</a></li>
-          <li><a href="./index.html" role="button">Sobre mi</a></li>
-          <li><a href="./index.html" role="button">Fotos</a></li>
-          <li><a href="./index.html" role="button">Portfolio</a></li>
-          <li><a href="./index.html" role="button">Contacto</a></li>
-          <li id="login_boton">
-            <a href="./login.html" role="button">Iniciar sesión</a>
-          </li>
-        </ul>
-        <div class="clear"></div>
-      </div>
       <!-- contenido -->
       <div class="articulo">
         <h1>Dorsales 2022</h1>
