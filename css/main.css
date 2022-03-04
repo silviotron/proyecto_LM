@@ -9,8 +9,7 @@
   --moon-color: transparent;
 }
 body {
-  background: url("../imagenes/fondo_aduriz.jpeg") no-repeat fixed center,
-    linear-gradient(#ff0000b7, black);
+  background: url("../imagenes/fondo_aduriz.jpeg") no-repeat fixed center, black;
   background-size: auto 100%;
   background-blend-mode: luminosity;
   font-size: 16px;
@@ -22,13 +21,16 @@ body {
   padding: 0;
 }
 #principal {
-  margin: 0 auto;
+  margin: 0px auto;
+  top: 30px;
   width: 55%;
   background: var(--bg-color);
   background-size: 500px 500px;
   height: auto;
   min-width: 200px;
   padding: 20px;
+  position: relative;
+  z-index: -1;
 }
 p {
   margin: 20px 0;
@@ -297,7 +299,8 @@ table#horario {
   float: left;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border-radius: 34px;
+  border-radius: 10px;
+  background-color: #ff00006e;
 }
 
 .slider::before {
@@ -311,7 +314,6 @@ table#horario {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 10px;
-  z-index: -1;
 }
 
 input:checked + .slider:before {
@@ -320,9 +322,11 @@ input:checked + .slider:before {
   transform: translateX(34px);
 }
 div#modos {
+  top: 1px;
+  left: 40px;
   width: 72px;
   height: 35px;
-  background-color: var(--bg-color);
+  background-color: transparent;
   border: none;
   border-radius: 10px;
   float: left;
@@ -335,12 +339,11 @@ i {
   margin-left: 5px;
   margin-right: 5px;
   display: inline;
+  color: var(--text-color);
 }
 .bi.bi-brightness-high {
-  color: var(--sun-color);
-  transition-delay: 0.15s;
+  transform: translateX(-40px);
 }
 .bi.bi-moon {
-  color: var(--moon-color);
-  transition-delay: 0.15s;
+  transform: translateX(40px);
 }
