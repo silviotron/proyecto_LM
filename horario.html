@@ -27,31 +27,45 @@
       type="text/css"
       href="./css/main.css"
     />
+    <script src="./scripts/mode.js"></script>
   </head>
 
-  <body>
-    <!-- Popup -->
-    <div id="popup2" class="overlay">
-      <div class="popup">
-        <h2>Alonso a 3Kms</h2>
-        <a class="close" href="#popup1">&times;</a>
-        <div class="content">Esta noche estoy solo en casa🔥🔥🔥.</div>
+  <body onload="modo_set();">
+    <!-- Menu -->
+    <div id="menu">
+      <!-- modos -->
+      <div id="modos">
+        <i class="bi bi-brightness-high"></i>
+        <i class="bi bi-moon"></i>
+        <label class="switch">
+          <input type="checkbox" id="myCheck" onclick="modo_set()" />
+          <span class="slider"></span>
+        </label>
       </div>
+      <ul>
+        <li></li>
+        <li><a href="./index.html" role="button">Inicio</a></li>
+        <li class="seleccionado" role="button">
+          <a href="./horario.html">Horario</a>
+        </li>
+        <li><a href="./index.html" role="button">Sobre mi</a></li>
+        <li><a href="./index.html" role="button">Fotos</a></li>
+        <li><a href="./index.html" role="button">Portfolio</a></li>
+        <li><a href="./index.html" role="button">Contacto</a></li>
+        <li id="login_boton">
+          <a href="./login.html" role="button">Iniciar sesión</a>
+        </li>
+        <li id="signup_boton">
+          <a href="./signup.html" role="button">Registrarse</a>
+        </li>
+      </ul>
+      <div class="clear"></div>
     </div>
+    <!-- principal -->
     <div id="principal">
-      <div id="menu">
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li class="seleccionado"><a href="./horario.html">Horario</a></li>
-          <li><a href="#">Sobre mi</a></li>
-          <li><a href="#">Fotos</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="./login.html">Iniciar sesión</a></li>
-        </ul>
-        <div class="clear"></div>
-      </div>
       <br /><br /><br />
+      <!-- Horario -->
+      <div id"horario>
       <table h bgcolor="#4f4a40" cellpadding="5" id="horario">
         <tr>
           <th bgcolor="#8d8d8d">Horas</th>
@@ -123,6 +137,15 @@
           <th bgcolor="#d9d9d9">17:40-18:30</th>
         </tr>
       </table>
+      <div id="leyenda">
+        <h3>Prog: Rafa</h3>
+        <h3>SisInf: Marcos</h3>
+        <h3>BD: Montserrat</h3>
+        <h3>LMSXI: Alberto</h3>
+        <h3>CD: Nose</h3>
+        <h3>FOL: Nose</h3>
+      </div>
+    </div>
     </div>
   </body>
 </html>

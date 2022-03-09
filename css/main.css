@@ -2,7 +2,7 @@
   --main-color: #ff0000b7;
   --second-color: #ffffff;
   --text-color: #000000;
-  --bg-color: #ffffffbe;
+  --bg-color: #ffffffda;
   --test-color: #000000d0;
   --cookie-filter: invert(0);
   --sun-color: transparent;
@@ -24,13 +24,14 @@ body {
   margin: 0px auto;
   top: 30px;
   width: 55%;
+  height: 100%;
   background: var(--bg-color);
   background-size: 500px 500px;
-  height: auto;
   min-width: 200px;
   padding: 20px;
   position: relative;
   z-index: -1;
+  cursor: text;
 }
 p {
   margin: 20px 0;
@@ -92,10 +93,9 @@ p {
   border-radius: 0.3125em;
   background: var(--main-color);
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 .buttons button:hover {
-  transform: scale(0.97);
+  opacity: 70%;
 }
 .buttons .item {
   margin: 0 0.625em;
@@ -272,6 +272,9 @@ table#horario {
   margin: auto;
   margin-top: 30px;
 }
+table {
+  color: black;
+}
 /* ---- modo claro/oscuro --------------------------------------------------------------- */
 .switch {
   width: 60px;
@@ -295,7 +298,6 @@ table#horario {
   right: 0;
   bottom: 0;
   float: left;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 10px;
   background-color: #ff00006e;
@@ -309,14 +311,12 @@ table#horario {
   left: 4px;
   bottom: 4px;
   background-color: #ff0000b7;
-  -webkit-transition: 0.4s;
+  transition: 0.4s;
   transition: 0.4s;
   border-radius: 10px;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(34px);
-  -ms-transform: translateX(34px);
   transform: translateX(34px);
 }
 div#modos {
@@ -344,4 +344,7 @@ i {
 }
 .bi.bi-moon {
   transform: translateX(40px);
+}
+/* ---- Resumen --------------------------------------------------------------- */
+.resumen iframe {
 }
