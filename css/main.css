@@ -30,7 +30,6 @@ body {
   min-width: 200px;
   padding: 20px;
   position: relative;
-  z-index: -1;
   cursor: text;
 }
 p {
@@ -115,6 +114,7 @@ p {
   float: left;
   text-align: center;
   display: inline;
+  z-index: 1;
 }
 
 #menu ul {
@@ -346,5 +346,3 @@ i {
   transform: translateX(40px);
 }
 /* ---- Resumen --------------------------------------------------------------- */
-.resumen iframe {
-}
