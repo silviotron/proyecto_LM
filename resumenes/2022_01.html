@@ -12,6 +12,8 @@
       type="text/css"
       href="../css/main.css"
     />
+    <!-- modos -->
+    <script src="./scripts/mode.js"></script>
   </head>
   <body onload="modo_set();">
     <!-- Menu -->
@@ -27,14 +29,14 @@
       </div>
       <ul>
         <li></li>
-        <li><a href="./index.html" role="button">Inicio</a></li>
-        <li><a href="./horario.html" role="button">Horario</a></li>
-        <li><a href="./index.html" role="button">Artículos</a></li>
-        <li><a href="./index.html" role="button">Fotos</a></li>
+        <li><a href="../index.html" role="button">Inicio</a></li>
+        <li><a href="../horario.html" role="button">Horario</a></li>
+        <li><a href="../index.html" role="button">Artículos</a></li>
+        <li><a href="../index.html" role="button">Fotos</a></li>
         <li class="seleccionado"><a role="button">Resumenes</a></li>
-        <li><a href="./index.html" role="button">Jugadores</a></li>
+        <li><a href="../index.html" role="button">Jugadores</a></li>
         <li id="login_boton">
-          <a href="./login.html" role="button">Iniciar sesión</a>
+          <a href="../login.html" role="button">Iniciar sesión</a>
         </li>
         <li id="signup_boton">
           <a href="./signup.html" role="button">Registrarse</a>
@@ -45,9 +47,9 @@
     <div id="principal">
       <!-- Resumen 01 -->
       <div class="resumen" id="resumen01">
-        <h2>Jornada 1</h2>
+        <h2 id="titulo">Copa del rey 1/16</h2>
 
-        <p>
+        <p id="texto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Et
           ultrices neque ornare aenean euismod elementum nisi quis. Consequat
@@ -62,17 +64,14 @@
           nisl purus in mollis nunc sed. Quisque id diam vel quam elementum.
           Pellentesque dignissim enim sit amet venenatis.
         </p>
-        <p>
-          Elche CF y Athletic Club empatan a cero en el Martínez Valero en el
-          partido que cerraba la primera jornada #ElcheAthletic J01 LaLiga
-          Santander 2021/2022 Suscríbete al canal oficial de LaLiga Santander en
-          HD http://goo.gl/Cp0tC Subscribe to the Official Channel of LaLiga in
-          High Definition http://goo.gl/Cp0tC LaLiga Santander on YouTube:
-          http://goo.gl/Cp0tC LaCopa on YouTube: http://bit.ly/1P4ZriP LaLiga
-          SmartBank on YouTube: http://bit.ly/1OvSXbi Facebook:
-          https://www.facebook.com/laliga Twitter: https://twitter.com/LaLiga
-          Instagram: https://instagram.com/laliga Google+: http://goo.gl/46Py9
-        </p>
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/p32j_zD4eKE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   </body>

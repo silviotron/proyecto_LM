@@ -1,16 +1,17 @@
 :root {
   --main-color: #ff0000b7;
-  --second-color: #ffffff;
+  --second-color: #ffdede;
   --text-color: #000000;
-  --bg-color: #ffffffda;
+  --bg-color: #ffdede;
   --test-color: #000000d0;
   --cookie-filter: invert(0);
   --sun-color: transparent;
   --moon-color: transparent;
+  --test: #f0f0f0;
 }
 body {
   background: url("../imagenes/fondo_aduriz.jpeg") no-repeat fixed center, black;
-  background-size: auto 100%;
+  background-size: 100% auto;
   background-blend-mode: luminosity;
   font-size: 16px;
   font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
@@ -31,6 +32,7 @@ body {
   padding: 20px;
   position: relative;
   cursor: text;
+  opacity: 1;
 }
 p {
   margin: 20px 0;
@@ -52,6 +54,7 @@ p {
   box-shadow: 0.0625em 0.4375em 0.875em -0.3125em rgba(0, 0, 0, 0.15);
   text-align: center;
   font-size: 1vw;
+  z-index: 2;
 }
 .wrapper.hide {
   opacity: 0;
@@ -148,6 +151,7 @@ p {
   background: transparent;
   color: var(--main-color);
 }
+
 /* ---- Otro --------------------------------------------------------------- */
 #publicidad #pIzquierda {
   margin: 0 auto;
@@ -169,7 +173,7 @@ p {
 .overlay {
   /*animation: 8s ease-out 0s 1 slideInFromLeft;*/
   position: fixed;
-  top: 15px;
+  top: 70px;
   right: 15px;
   visibility: hidden;
   opacity: 0;
@@ -180,12 +184,12 @@ p {
   cursor: not-allowed;
 }
 #popup1.overlay {
-  background: url("../imagenes/calamardo.jpg") var(--bg-color) no-repeat;
+  background: url("../imagenes/calamardo.jpg") var(--second-color) no-repeat;
   background-size: 110px;
   background-position: left;
 }
 #popup2.overlay {
-  background: url("../imagenes/alonso.jpg") var(--bg-color) no-repeat;
+  background: url("../imagenes/alonso.jpg") var(--second-color) no-repeat;
   background-size: 110px;
   background-position: left;
 }
@@ -195,7 +199,7 @@ p {
 
 .overlay:target {
   visibility: visible;
-  opacity: 0.9;
+  opacity: 0.95;
   animation: 10s ease-out 1 slideInFromLeft;
 }
 .popup:hover {
@@ -345,4 +349,37 @@ i {
 .bi.bi-moon {
   transform: translateX(40px);
 }
-/* ---- Resumen --------------------------------------------------------------- */
+/* ---- resumen --------------------------------------------------------------- */
+.resumen + h2 {
+  display: grid;
+  grid-area: titulo;
+  background-color: red;
+  height: auto;
+  width: auto;
+}
+.resumen + p {
+  grid-area: texto;
+  background-color: blue;
+  height: auto;
+  width: auto;
+}
+.resumen + iframe {
+  position: relative;
+  grid-area: video;
+  background-color: green;
+  height: auto;
+  width: auto;
+}
+
+div.resumen {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-areas:
+    "titulo . video "
+    "titulo texto . "
+    "texto texto . ";
+}
