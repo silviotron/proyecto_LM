@@ -1,12 +1,10 @@
 :root {
   --main-color: #ff0000b7;
-  --second-color: #ffdede;
+  --second-color: #f0f0f0;
   --text-color: #000000;
-  --bg-color: #ffdede;
+  --bg-color: #ffffff;
   --test-color: #000000d0;
   --cookie-filter: invert(0);
-  --sun-color: transparent;
-  --moon-color: transparent;
   --test: #f0f0f0;
 }
 body {
@@ -350,36 +348,57 @@ i {
   transform: translateX(40px);
 }
 /* ---- resumen --------------------------------------------------------------- */
-.resumen + h2 {
-  display: grid;
-  grid-area: titulo;
-  background-color: red;
+.resumen iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
   height: auto;
-  width: auto;
 }
-.resumen + p {
-  grid-area: texto;
-  background-color: blue;
-  height: auto;
-  width: auto;
-}
-.resumen + iframe {
+.minimenu {
   position: relative;
-  grid-area: video;
-  background-color: green;
-  height: auto;
-  width: auto;
+  width: 100%;
+  height: 50px;
+  background-color: var(--bg-color);
+  z-index: 10;
+}
+.resumen img {
+  width: 100%;
+}
+/* ---- miniMenú --------------------------------------------------------------- */
+.minimenu {
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  display: inline;
 }
 
-div.resumen {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px 300px;
-  column-gap: 20px;
-  row-gap: 20px;
-  grid-template-areas:
-    "titulo . video "
-    "titulo texto . "
-    "texto texto . ";
+.minimenu ul {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+.minimenu ul li {
+  margin: 0;
+  display: inline-block;
+}
+
+.minimenu ul li a {
+  border: 0;
+  background: transparent;
+  color: var(--text-color);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.minimenu ul li a:hover {
+  color: var(--main-color);
+}
+
+.minimenu ul li.seleccionado a {
+  background: transparent;
+  color: var(--main-color);
 }
