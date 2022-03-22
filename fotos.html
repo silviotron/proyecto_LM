@@ -20,7 +20,7 @@
     <script src="./scripts/mode.js"></script>
   </head>
 
-  <body onload="window.location.href='#popup1'; modo_set();">
+  <body onload="window.location.href='#1'; modo_set();">
     <!-- Menu -->
     <div id="menu">
       <!-- modos -->
@@ -68,20 +68,25 @@
       </div>
     </div>
     <script src="./scripts/cookies.js"></script>
-    <!-- Popup -->
-    <div id="popup1" class="overlay">
-      <div class="popup">
-        <!--onclick="window.location.href='https://www.google.com'"-->
-        <h2>Calamardo a 5Kms</h2>
-        <a class="close" href="#popup2">&times;</a>
-        <div class="content">que haces esta noche🔥🔥🔥.</div>
-      </div>
-    </div>
-    <div id="popup2" class="overlay">
-      <div class="popup">
-        <h2>Alonso a 3Kms</h2>
-        <a class="close" href="#popup1">&times;</a>
-        <div class="content">¿me echas una carrera🔥🔥🔥?.</div>
+    <!-- Contenedor principal-->
+    <div id="principal">
+      <!-- contenido -->
+      <div id="fotos">
+        <div id="1">
+          <a href="#3" class="left"><</a>
+          <a href="#2" class="right">></a>
+          <img src="./imagenes/alonso.jpg" alt="" />
+        </div>
+        <div id="2">
+          <a href="#1" class="left"><</a>
+          <a href="#3" class="right">></a>
+          <img src="./imagenes/aduriz.jpeg" alt="" />
+        </div>
+        <div id="3">
+          <a href="#2" class="left"><</a>
+          <a href="#1" class="right">></a>
+          <img src="./imagenes/calamardo.jpg" alt="" />
+        </div>
       </div>
     </div>
   </body>

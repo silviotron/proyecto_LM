@@ -23,7 +23,8 @@ body {
   margin: 0px auto;
   top: 30px;
   width: 55%;
-  height: 100%;
+  height: auto;
+  min-height: 100vh;
   background: var(--bg-color);
   background-size: 500px 500px;
   min-width: 200px;
@@ -428,4 +429,42 @@ i {
   cursor: pointer;
   padding: 20px;
   border-radius: 15px;
+}
+/* ---- fotos --------------------------------------------------------------- */
+div#fotos img {
+  width: 100%;
+  height: 100%;
+}
+
+div#fotos div {
+  display: none;
+}
+div#fotos div:target {
+  display: block;
+  width: 100%;
+}
+div#fotos div a {
+  display: inline;
+  background-color: var(--text-color);
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  font-size: 42px;
+  color: white;
+  margin-top: 0;
+  padding-top: 0;
+}
+div#fotos div a:hover {
+  background-color: grey;
+}
+div#fotos div a.right {
+  float: right;
+  transform: translate(25px, 50vh);
+}
+div#fotos div a.left {
+  float: left;
+  transform: translate(-25px, 50vh);
 }
