@@ -2,24 +2,21 @@
 var r = document.querySelector(":root");
 // Create a function for setting a variable value
 function oscuro_set() {
-  // Set the value of variable --blue to another value (in this case "lightblue")
-  r.style.setProperty("--main-color", "#ff0000b7");
-  r.style.setProperty("--second-color", "#000000");
-  r.style.setProperty("--text-color", "#ffffff");
-  r.style.setProperty("--bg-color", "#2f0300e8");
-  r.style.setProperty("--cookie-filter", "invert(1)");
-  document.cookie = "modo = claro";
+  r.style.setProperty("--main-color", "var(--oscuro-main-color)");
+  r.style.setProperty("--second-color", "var(--oscuro-second-color)");
+  r.style.setProperty("--text-color", "var(--oscuro-text-color)");
+  r.style.setProperty("--bg-color", "var(--oscuro-bg-color)");
+  r.style.setProperty("--cookie-filter", "var(--oscuro-cookie-filter)");
+  document.cookie = "modo = oscuro; path=/silviotron.github.io";
 
 }
 function claro_set() {
-  // Set the value of variable --blue to another value (in this case "lightblue")
-  r.style.setProperty("--main-color", "#ff0000b7");
-  r.style.setProperty("--second-color", "#f0f0f0");
-  r.style.setProperty("--text-color", "#000000");
-  r.style.setProperty("--bg-color", "#ffffff");
-  r.style.setProperty("--cookie-filter", "invert(0)");
-  document.cookie = "modo = oscuro;"
-
+  r.style.setProperty("--main-color", "var(--claro-main-color)");
+  r.style.setProperty("--second-color", "var(--claro-second-color)");
+  r.style.setProperty("--text-color", "var(--claro-text-color)");
+  r.style.setProperty("--bg-color", "var(--claro-bg-color)");
+  r.style.setProperty("--cookie-filter", "var(--claro-cookie-filter)");
+  document.cookie = "modo = claro; path=/silviotron.github.io;"
 }
 function modo_set() {
   var checkBox = document.getElementById("myCheck");
@@ -29,4 +26,13 @@ function modo_set() {
   } else {
     claro_set();
   }
+}
+function load_modo(){
+  var checkBox = document.getElementById("myCheck");
+  if(document.cookie = "modo = oscuro; path=/silviotron.github.io"){
+    document.getElementById("myCheck").cheked = true;
+  }else if(document.cookie = "modo = claro; path=/silviotron.github.io"){
+    document.getElementById("myCheck").cheked = false;
+  }
+  modo_set();
 }

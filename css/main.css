@@ -1,11 +1,21 @@
 :root {
-  --main-color: #ff0000b7;
-  --second-color: #f0f0f0;
-  --text-color: #000000;
-  --bg-color: #ffffff;
-  --test-color: #000000d0;
-  --cookie-filter: invert(0);
-  --test: #f0f0f0;
+  --main-color: transparent;
+  --second-color: transparent;
+  --text-color: transparent;
+  --bg-color: transparent;
+  --cookie-filter: transparent;
+
+  --claro-main-color: #ff0000b7;
+  --claro-second-color: #f0f0f0;
+  --claro-text-color: #000000;
+  --claro-bg-color: #ffffff;
+  --claro-cookie-filter: invert(0);
+
+  --oscuro-main-color: #ff0000b7;
+  --oscuro-second-color: #141414;
+  --oscuro-text-color: #ffffff;
+  --oscuro-bg-color: #000000;
+  --oscuro-cookie-filter: invert(1);
 }
 body {
   background: url("../imagenes/fondo_aduriz.jpeg") no-repeat fixed center, black;
@@ -317,6 +327,7 @@ table {
   transition: 0.4s;
   transition: 0.4s;
   border-radius: 10px;
+  list-style: circle;
 }
 
 input:checked + .slider:before {
@@ -405,21 +416,21 @@ i {
 }
 /* ---- pie --------------------------------------------------------------- */
 
-#pie {
+div#pie {
   background-color: transparent;
-  padding: 10px;
+  padding: 0;
   width: 100%;
   text-align: center;
   display: inline;
 }
+
 #pie ul {
-  margin: 0;
-  padding: 10px;
   list-style: none;
+  display: inline-block;
+  padding: 0 3vw;
 }
 #pie ul li {
   margin: 0;
-  display: inline-block;
 }
 #pie ul li a {
   border: 0;
