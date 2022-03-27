@@ -20,8 +20,7 @@
     <script src="./scripts/mode.js"></script>
   </head>
 
-  <body onload="window.location.href='#popup1'; modo_set();">
-    <!-- Menu -->
+  <body onload="window.location.href='#popup1'; load_modo();">
     <div id="menu">
       <!-- modos -->
       <div id="modos">
@@ -32,21 +31,29 @@
           <span class="slider"></span>
         </label>
       </div>
+      <!--menu-->
       <ul>
-        <li></li>
-        <li class="seleccionado" role="button">
-          <a href="./index.html">Inicio</a>
+        <li class="seleccionado">
+          <a href="./index.html" role="button">Inicio</a>
         </li>
-        <li><a href="./horario.html" role="button">Horario</a></li>
-        <li><a href="./index.html" role="button">Artículos</a></li>
         <li><a href="./fotos.html" role="button">Fotos</a></li>
-        <li><a href="./index.html" role="button">Resumenes</a></li>
-        <li><a href="./index.html" role="button">Jugadores</a></li>
-        <li id="login_boton">
-          <a href="./login.html" role="button">Iniciar sesión</a>
+        <li>
+          <a href="./resumenes/CR_2022_1.html" role="button">Resumenes</a>
         </li>
-        <li id="signup_boton">
-          <a href="./signup.html" role="button">Registrarse</a>
+        <li>
+          <a href="./Jugadores/Jugador_01.html" role="button">Jugadores</a>
+        </li>
+        <li>
+          <a href="./horario.html" role="button">Horario</a>
+        </li>
+        <li>
+          <a href="./sobre_mi.html" role="button">Sobre mi</a>
+        </li>
+        <li>
+          <a href="./que_aprendi.html" role="button">que aprendi</a>
+        </li>
+        <li id="login_boton">
+          <a href="./formularioInicial.html" role="button">Cerrar sesión</a>
         </li>
       </ul>
       <div class="clear"></div>
@@ -83,6 +90,10 @@
         <a class="close" href="#popup1">&times;</a>
         <div class="content">¿me echas una carrera🔥🔥🔥?.</div>
       </div>
+    </div>
+    <!-- Contenedor principal-->
+    <div id="principal">
+      <!-- contenido -->
     </div>
   </body>
 </html>

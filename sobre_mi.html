@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>athletic1898.com</title>
+    <link
+      rel="stylesheet"
+      media="screen,projection"
+      type="text/css"
+      href="./css/main.css"
+    />
+    <link rel="shortcut icon" href="./imagenes/athletic_logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <!-- modos -->
+    <script src="./scripts/mode.js"></script>
+  </head>
+
+  <body onload="window.location.href='#popup1'; load_modo();">
+    <div id="menu">
+      <!-- modos -->
+      <div id="modos">
+        <i class="bi bi-brightness-high"></i>
+        <i class="bi bi-moon"></i>
+        <label class="switch">
+          <input type="checkbox" id="myCheck" onclick="modo_set()" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <!--menu-->
+      <ul>
+        <li class="seleccionado">
+          <a href="./index.html" role="button">Inicio</a>
+        </li>
+        <li><a href="./fotos.html" role="button">Fotos</a></li>
+        <li>
+          <a href="./resumenes/CR_2022_1.html" role="button">Resumenes</a>
+        </li>
+        <li>
+          <a href="./Jugadores/Jugador_01.html" role="button">Jugadores</a>
+        </li>
+        <li>
+          <a href="./horario.html" role="button">Horario</a>
+        </li>
+        <li>
+          <a href="./sobre_mi.html" role="button">Sobre mi</a>
+        </li>
+        <li>
+          <a href="./que_aprendi.html" role="button">que aprendi</a>
+        </li>
+        <li id="login_boton">
+          <a href="./formularioInicial.html" role="button">Cerrar sesión</a>
+        </li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+
+    <!-- cookies -->
+    <div class="wrapper">
+      <img src="./imagenes/cookie.png" alt="" />
+      <div class="content">
+        <header>Consentimiento de Cookies</header>
+        <p>
+          Esta web usa cookies para asegurarnos de que disfrutes de la mejor
+          experiencia en nuestra web.
+        </p>
+        <div class="buttons">
+          <button class="item">Estoy de acuerdo</button>
+          <a href="#" class="item">Leer más</a>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/cookies.js"></script>
+    <!-- Popup -->
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <!--onclick="window.location.href='https://www.google.com'"-->
+        <h2>Calamardo a 5Kms</h2>
+        <a class="close" href="#popup2">&times;</a>
+        <div class="content">que haces esta noche🔥🔥🔥.</div>
+      </div>
+    </div>
+    <div id="popup2" class="overlay">
+      <div class="popup">
+        <h2>Alonso a 3Kms</h2>
+        <a class="close" href="#popup1">&times;</a>
+        <div class="content">¿me echas una carrera🔥🔥🔥?.</div>
+      </div>
+    </div>
+    <!-- Contenedor principal-->
+    <div id="principal">
+      <!-- contenido -->
+      <li>      
+        <h1>Sobre mi</h1> 
+        <ul>
+           <img style="margin-bottom: 1%;" aling="center" src="./imagenes/silvioEmpresario.png"width="480" height="270"> 
+           <li> <b>NOMBRE Y APELLIDOS:</b> Silvio Novas Martínez</li> 
+           <li> <b>FECHA DE NACIMIENTO:</b> <em>01-03-2002</li></em>
+           <li> <b>DOMICILIO:</b> A serra nº 70, Arcos, Ponteareas </li>
+       </ul>
+   </li>
+   <li>
+    <h2>Aficiones</h2>
+    <ul><strong>
+     <li>Furbo</li>
+     <li>Videojuegos</li>
+     <li>Series</li>
+     <li>Formula 1</li>
+     <li>Música</li>
+ </ul></strong>
+</li>
+<li>
+<h2>Estudios académicos</h2>
+<ul>
+   <li> <b>Estudios:</b> Bachillerato de Ciencias</li>
+   
+</ul>
+</li>
+      <!--Pie-->
+      <div id="pie">
+        <p>© 2022 Copyright athletic1898.com. Todos los derechos reservados.</p>
+        <ul>
+          <li><a href="#./condiciones.html">Condiciones de uso</a></li>
+          <li><a href="#./publicidad.html">Publicidad</a></li>
+          <li><a href="#./reporte.html">Reportar error</a></li>
+          <li><a href="#./privacidad.html">Privacidad</a></li>
+        </ul>
+        <ul>
+          <li><a href="#./recomendados.html">Sitios recomendados</a></li>
+          <li><a href="#./licencia.html">Licencia</a></li>
+          <li><a href="#./bases.html">Bases legales</a></li>
+          <li><a href="#./faq.html">FAQ</a></li>
+        </ul>
+        <ul>
+          <li><a href="#./contacto.html">Contactar</a></li>
+          <li>
+            <a href="https://www.instagram.com/athletic1898_com">Instagram</a>
+          </li>
+          <li><a href="https://twitter.com/Athletic18985">Twitter</a></li>
+          <li><a href="https://twitter.com/Athletic18985">facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    
+  </body>
+</html>

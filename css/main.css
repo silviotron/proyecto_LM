@@ -1,9 +1,9 @@
 :root {
-  --main-color: transparent;
-  --second-color: transparent;
-  --text-color: transparent;
-  --bg-color: transparent;
-  --cookie-filter: transparent;
+  --main-color: var(--claro-main-color);
+  --second-color: var(--claro-second-color);
+  --text-color: var(--claro-text-color);
+  --bg-color: var(--claro-bg-color);
+  --cookie-filter: var(--claro-cookie-color);
 
   --claro-main-color: #ff0000b7;
   --claro-second-color: #f0f0f0;
@@ -27,6 +27,7 @@ body {
   filter: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 #principal {
   margin: 0px auto;
@@ -40,6 +41,7 @@ body {
   position: relative;
   cursor: text;
   opacity: 1;
+  list-style: none;
 }
 p {
   margin: 20px 0;
@@ -451,27 +453,27 @@ div#fotos div:target {
 }
 div#fotos div a {
   display: inline;
-  background-color: var(--text-color);
+  background-color: red;
   border-radius: 50px;
   height: 50px;
   width: 50px;
   text-decoration: none;
-  color: #000000;
   text-align: center;
   font-size: 42px;
-  color: white;
+  color: var(--bg-color);
   margin-top: 0;
   padding-top: 0;
 }
 div#fotos div a:hover {
-  background-color: grey;
+  opacity: 90%;
 }
 div#fotos div a.right {
-  float: right;
-  transform: translate(25px, 50vh);
+  position: fixed;
+  margin-right: 0;
+  transform: translate(109vh, 50vh);
 }
 div#fotos div a.left {
-  float: left;
+  position: fixed;
   transform: translate(-25px, 50vh);
 }
 /* ---- Jugadores --------------------------------------------------------------- */
@@ -484,7 +486,9 @@ div.jugador {
 }
 
 div.jugador #nombre {
-  font-size: 20px;
+  font-size: 27px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 div.jugador #dorsal {
   font-size: 160px;
@@ -495,9 +499,89 @@ div.jugador #dorsal {
   color: red;
 }
 #datos {
-  margin-top: 30px;
+  font-size: 17px;
+  margin: 30px auto;
   transform: translateX(100px);
 }
 .jugador img {
   height: auto;
+}
+/* ---- Login --------------------------------------------------------------- */
+div#login {
+  margin: 0 auto;
+  height: 100vh;
+  background-color: white;
+  min-width: 500px;
+  max-width: 500px;
+  color: black;
+}
+
+#login img {
+  margin-left: 50%;
+  transform: translatex(-50%);
+  max-width: 200px;
+  max-height: 100px;
+}
+div.maindiv {
+  margin: 0 auto;
+  width: 390px;
+  padding: 3rem;
+  display: inline-block;
+}
+#login label {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+}
+#login input {
+  background-color: #c9c9c9;
+  border-radius: 12px;
+  border: 0;
+  color: black;
+  padding-left: 10px;
+  font-size: 18px;
+  height: 40px;
+  outline: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+#login button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42;
+  color: white;
+  border-radius: 40px;
+  outline: none;
+  min-width: 88px;
+  margin-top: 10px;
+}
+#login button.volver {
+  background-color: #a3a3a3;
+  float: left;
+}
+#login button.iniciarSesion {
+  background-color: #ff0000b7;
+  float: right;
+}
+#login button:hover {
+  opacity: 70%;
+}
+.placeholder1,
+.placeholder2 {
+  transform: translatey(-65px);
+}
+#login input#usuario:focus ~ .placeholder1,
+#login input#contraseña:focus ~ .placeholder2 {
+  transform: translatey(-65px);
+  transition: 1s;
+}
+#login input#usuario:placeholder-shown ~ .placeholder1,
+#login input#contraseña:placeholder-shown ~ .placeholder2 {
+  transform: translatey(-30px);
+  transition: 1s;
 }
