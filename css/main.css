@@ -23,7 +23,6 @@ body {
   background-blend-mode: luminosity;
   font-size: 16px;
   font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
-  cursor: crosshair;
   color: var(--text-color);
   filter: none;
   margin: 0;
@@ -33,8 +32,7 @@ body {
   margin: 0px auto;
   top: 30px;
   width: 55%;
-  height: auto;
-  min-height: 100vh;
+  height: 100%;
   background: var(--bg-color);
   background-size: 500px 500px;
   min-width: 200px;
@@ -103,7 +101,6 @@ p {
   font-weight: 500;
   border-radius: 0.3125em;
   background: var(--main-color);
-  cursor: pointer;
 }
 .buttons button:hover {
   opacity: 70%;
@@ -146,7 +143,6 @@ p {
   color: var(--text-color);
   font-weight: bold;
   text-decoration: none;
-  cursor: pointer;
   padding: 10px;
   border-radius: 15px;
 }
@@ -421,13 +417,14 @@ div#pie {
   padding: 0;
   width: 100%;
   text-align: center;
-  display: inline;
+  display: inline-block;
+  border-top: solid 1px var(--text-color);
 }
 
 #pie ul {
   list-style: none;
   display: inline-block;
-  padding: 0 3vw;
+  padding: 0 4vw;
 }
 #pie ul li {
   margin: 0;
@@ -438,8 +435,6 @@ div#pie {
   color: var(--text-color);
   font-weight: bold;
   cursor: pointer;
-  padding: 20px;
-  border-radius: 15px;
 }
 /* ---- fotos --------------------------------------------------------------- */
 div#fotos img {
@@ -478,4 +473,31 @@ div#fotos div a.right {
 div#fotos div a.left {
   float: left;
   transform: translate(-25px, 50vh);
+}
+/* ---- Jugadores --------------------------------------------------------------- */
+div.jugador {
+  width: 50%;
+  margin: 0 auto;
+}
+.jugador ul {
+  list-style: none;
+}
+
+div.jugador #nombre {
+  font-size: 20px;
+}
+div.jugador #dorsal {
+  font-size: 160px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  transform: translate(100px, -30px);
+  color: red;
+}
+#datos {
+  margin-top: 30px;
+  transform: translateX(100px);
+}
+.jugador img {
+  height: auto;
 }

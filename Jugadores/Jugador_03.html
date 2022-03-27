@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>athletic1898.com</title>
+    <script src="./scripts/mode.js"></script>
+    <link
+      rel="stylesheet"
+      media="screen,projection"
+      type="text/css"
+      href="../css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="shortcut icon" href="./imagenes/athletic_logo.png" />
+    <!-- modos -->
+    <script src="../scripts/mode.js"></script>
+  </head>
+  <body onload="modo_set();">
+    <!-- Menu -->
+    <div id="menu">
+      <!-- modos -->
+      <div id="modos">
+        <i class="bi bi-brightness-high"></i>
+        <i class="bi bi-moon"></i>
+        <label class="switch">
+          <input type="checkbox" id="myCheck" onclick="modo_set()" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <ul>
+        <li></li>
+        <li><a href="../index.html" role="button">Inicio</a></li>
+        <li><a href="../horario.html" role="button">Horario</a></li>
+        <li><a href="../index.html" role="button">Artículos</a></li>
+        <li><a href="../index.html" role="button">Fotos</a></li>
+        <li><a role="button">Resumenes</a></li>
+        <li class="seleccionado">
+          <a href="../index.html" role="button">Jugadores</a>
+        </li>
+        <li id="login_boton">
+          <a href="../login.html" role="button">Cerrar Sesion</a>
+        </li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+    <div id="principal">
+      <!-- Jugador 01 -->
+      <div class="jugador" id="jugador01">
+        <div class="contenido">
+          <h1 id="dorsal">3</h1>
+          <ul id="datos">
+            <li><h3 id="nombre">Unai Nuñez Gestoso</h3></li>
+            <li><strong>Posicion:</strong> Defensa</li>
+            <li><strong>Fecha de Nacimiento:</strong> 30-01-1997</li>
+            <li><strong>Lugar de Nacimiento:</strong> Portugalete (Bizkaia)</li>
+            <li><strong>Fecha de Debut:</strong> 20-08-2017</li>
+          </ul>
+          <img
+            src="https://cdn.athletic-club.eus/imagenes/fotofichas/M/unai-nunez-gestoso_M.png"
+          />
+        </div>
+      </div>
+      <!-- minimenu -->
+      <div class="minimenu" id="abajo">
+        <ul>
+          <li><a href="./Jugador_01.html" role="button">1</a></li>
+          <li><a href="./Jugador_02.html" role="button">2</a></li>
+          <li class="seleccionado">
+            <a href="./Jugador_03.html" role="button">3</a>
+          </li>
+          <li><a href="./Jugador_04.html" role="button">4</a></li>
+          <li><a href="./Jugador_05.html" role="button">5</a></li>
+          <li><a href="./Jugador_06.html" role="button">6</a></li>
+          <li><a href="./Jugador_25.html" role="button">>></a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
