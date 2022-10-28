@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+</head>
+
+<body>
+  <button onclick="ejecutar()">ejecutar</button>
+  <input type="number" name="num" id="num" value="0" min="0">
+  <p id="p1"></p>
+  <script>
+    var array = [
+      function () { window.close(); },// 0
+      function () { print(window.confirm("Esto es una confirmación")); },// 1
+      function () { window.alert("Esto es una alerta"); },// 2
+      function () { print(window.prompt("introduce texto")); },// 3
+      function () { window.open("", "test ventana", "resizable"); },// 4
+
+      function () { print(window.innerHeight); },// 5
+      function () { window.history.back(); },// 6
+      function () { print(window.outerHeight); },// 7
+      function () { print(window.devicePixelRatio); },// 8
+      function () { window.location = "https://www.google.com"; },// 9
+
+      function () { print(screen.availHeight); },// 10
+      function () { print(screen.availWidth); },// 11
+      function () { print(screen.orientation.type); },// 12
+      function () { print(screen.height); },// 13
+      function () { print(screen.width); },// 14
+
+      function () { location.assign("https://www.google.com"); },// 15
+      function () { location.reload(); },// 16
+      function () { location.replace("https://www.google.com"); },// 17
+      function () { print(location.toString()); },// 18
+
+      function () { location.href = "https://www.google.com"; },// 19
+      function () { print(location.protocol); },// 20
+      function () { location.host = "www.google.com"; },// 21
+      function () { print(location.pathname); },// 22
+      function () { location.search = "busca=true"; },// 23
+
+      function () { navigator.getBattery().then(battery => { print(battery.charging) }); },// 23
+
+
+    ];
+
+    function ejecutar() {
+      document.getElementById("p1").innerHTML = "";
+      let pos = document.getElementById("num").value;
+      if (pos < array.length && pos >= 0) {
+        array[pos]();
+
+      } else {
+        window.alert("posición no válida")
+      }
+    }
+
+    function print(txt) { document.getElementById("p1").innerHTML = txt }
+
+  </script>
+</body>
+
+</html>
