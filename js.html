@@ -44,7 +44,7 @@
       function () { print(location.pathname); },// 22
       function () { location.search = "busca=true"; },// 23
 
-      function () { navigator.getBattery().then(battery => { print(battery.charging) }); },// 23
+      function () { navigator.getBattery().then(battery => { print("cargando = " + battery.charging + "<br>bateria = " + battery.level * 100 + "%") }); },// 23
 
 
     ];
