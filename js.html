@@ -52,11 +52,12 @@
             text: 'texto del share',
             url: 'https://miweb.com/',
           })
-            .then(() => alert('compartido correctamente'))
-            .catch((error) => alert("Error al compartir"));
+            .then(() => console.log('Successful share'))
+            .catch((error) => console.log('Error sharing', error));
+        } else {
+          alert("navigator.share no disponible");
         }
       },// 25
-
 
 
 
