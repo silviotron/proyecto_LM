@@ -59,30 +59,20 @@
         }
       },// 25
       function () {
-        if (navigator.vibrate) {
-          navigator.vibrate([500, 110, 500, 110, 450, 110, 200, 110, 170, 40, 450, 110, 200, 110, 170, 40, 500]);
-        } else {
-          alert("vibrate no disponible");
-        }
-      },// 26
-      function () {
-        if (navigator.vibrate) {
-          navigator.vibrate([80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 320, 160, 320, 160, 320]);
-        } else {
-          alert("vibrate no disponible");
-        }
-      },// 27      
-      function () {
-        if (navigator.vibrate) {
-          navigator.vibrate([0, 300, 100, 50, 100, 50, 100, 50, 100, 50, 100, 50, 100, 50, 150, 150, 150, 450, 100, 50, 100, 50, 150, 150, 150, 450, 100, 50, 100, 50, 150, 150, 150, 450, 150, 150]);
-        } else {
-          alert("vibrate no disponible");
-        }
-      },// 28
-
-
-
-
+        let vibraciones = [
+          function () { navigator.vibrate([500, 110, 500, 110, 450, 110, 200, 110, 170, 40, 450, 110, 200, 110, 170, 40, 500]); },
+          function () { navigator.vibrate([80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 320, 160, 320, 160, 320]); },
+          function () { navigator.vibrate([0, 300, 100, 50, 100, 50, 100, 50, 100, 50, 100, 50, 100, 50, 150, 150, 150, 450, 100, 50, 100, 50, 150, 150, 150, 450, 100, 50, 100, 50, 150, 150, 150, 450, 150, 150]); },
+        ]
+        var num = -1;
+        do {
+          num = prompt("introduce un numero del 1 al " + (vibraciones.length), "1") - 1;
+          if (num === null) {
+            break; //break out of the function early
+          }
+        } while (!(num in vibraciones));
+        vibraciones[num - 1]();
+      },// 26    
     ];
 
     function ejecutar() {
