@@ -45,21 +45,19 @@
       function () { location.search = "busca=true"; },// 23
 
       function () { navigator.getBattery().then(battery => { print("cargando = " + battery.charging + "<br>bateria = " + battery.level * 100 + "%") }); },// 24
-     async function () {
-        if (navigator.share()) {
-          try {
-            await navigator.share({
-              text: 'Follow me to get more web development content.',
-              url: 'https://google.com'
-            })
-          } catch (error) {
-            console.log('Sharing failed!', error)
-          };
-        } else {
-          alert("no se permite share");
-        }
-
-      },// 25
+     function() {
+if (navigator.share) {
+  navigator.share({
+      title: 'Compartiendo',
+      text: 'This is a narwhal',
+      url: 'https://miweb.com',
+  })
+    .then(() => alert('Successful share'))
+    .catch((error) => alert('Error sharing'));
+} else {
+  alert('navigator.share not available');
+}
+}),// 25
 
 
 
