@@ -46,7 +46,7 @@
 
       function () { navigator.getBattery().then(battery => { print("cargando = " + battery.charging + "<br>bateria = " + battery.level * 100 + "%") }); },// 24
      async function () {
-        if (navigator.canShare()) {
+        if (navigator.share()) {
           try {
             await navigator.share({
               text: 'Follow me to get more web development content.',
