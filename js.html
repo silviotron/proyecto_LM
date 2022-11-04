@@ -13,26 +13,63 @@
   <button onclick="ejecutar()">ejecutar</button>
   <input type="number" name="num" id="num" value="0" min="0">
   <p id="p1"></p>
-  <pre>Window
-    1-close()
-    2-confirm()
-    3-alert()
-    4-prompt()
-    5-open()
-    
-    6-innerHeight
-    7-history
-    8-outerHeight
-    9-devicePixelRatio
-    10-location
-    
-    Screen
-    11-availHeight
-    12-availWidth
-    13-orientation
-    14-height
-    15-
-    </pre>
+  <ol>
+    <h1>Window</h1>
+    <li>close()</li>
+    <li>confirm()</li>
+    <li>alert()</li>
+    <li>prompt()</li>
+    <li>open()</li>
+
+    <li>innerHeight</li>
+    <li>history</li>
+    <li>outerHeight</li>
+    <li>devicePixelRatio</li>
+    <li>location</li>
+
+    <h1>Screen</h1>
+    <li>availHeight</li>
+    <li>availWidth</li>
+    <li>orientation</li>
+    <li>height</li>
+    <li>width</li>
+
+    <h1>Location</h1>
+    <li>assign()</li>
+    <li>reload()</li>
+    <li>replace()</li>
+    <li>toString()</li>
+
+    <li>href</li>
+    <li>protocol</li>
+    <li>host</li>
+    <li>pathname</li>
+    <li>search</li>
+
+    <h1>Navigator</h1>
+    <li>getBattery()</li>
+    <li>vibrate()</li>
+    <li>share()</li>
+    <li>canShare()</li>
+    <li>getGamePads()</li>
+
+    <li>cookieEnabled</li>
+    <li>hardwareConcurrency</li>
+    <li>language</li>
+    <li>permissions</li>
+    <li>clipboard</li>
+
+    <h1>History</h1>
+    <li>back()</li>
+    <li>forward()</li>
+    <li>go()</li>
+    <li>pushState()</li>
+    <li>replaceState()</li>
+
+    <li>length</li>
+    <li>scrollRestoration</li>
+    <li>state</li>
+  </ol>
   <script>
     var array = [
       function () { window.close(); },// 0
@@ -94,6 +131,8 @@
         vibraciones[num]();
       },// 26   comando 26 
       function () { alert(navigator.canShare ? "SI se puede compartir" : "NO se puede compartir") },// 27
+      function () { alert("hay " + navigator.getGamepads().length + " mandos") },// 28
+
 
     ];
 
