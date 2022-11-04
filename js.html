@@ -13,7 +13,7 @@
   <button onclick="ejecutar()">ejecutar</button>
   <input type="number" name="num" id="num" value="0" min="0">
   <p id="p1"></p>
-  <ol>
+  <ol start="0">
     <h1>Window</h1>
     <li>close()</li>
     <li>confirm()</li>
@@ -48,8 +48,8 @@
 
     <h1>Navigator</h1>
     <li>getBattery()</li>
-    <li>vibrate()</li>
     <li>share()</li>
+    <li>vibrate()</li>
     <li>canShare()</li>
     <li>getGamePads()</li>
 
@@ -131,9 +131,29 @@
         vibraciones[num]();
       },// 26   comando 26 
       function () { alert(navigator.canShare ? "SI se puede compartir" : "NO se puede compartir") },// 27
-      function () { alert("hay " + navigator.getGamepads().length + " mandos") },// 28
-
-
+      function () { print(JSON.stringify(navigator.getGamepads())) },// 28
+      function () { print(navigator.cookieEnabled) },// 29
+      function () { print(navigator.hardwareConcurrency) },// 30
+      function () { print(navigator.language) },// 31
+      async function () {
+        const { state } = await navigator.permissions.query({
+          name: "notifications"
+        });
+        print("Notificaciones: " + state)
+      },// 32
+      function () {
+        navigator.clipboard.writeText("texto copiado").then(() => {
+          alert("Copiado en portapapeles");
+        })
+      },// 33
+      function () { },// 34
+      function () { },// 35
+      function () { },// 36
+      function () { },// 37
+      function () { },// 38
+      function () { },// 39
+      function () { },// 40
+      function () { },// 41
     ];
 
     function ejecutar() {
