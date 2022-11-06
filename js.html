@@ -72,36 +72,36 @@
     </ol>
     <script>
         var array = [
-            function () { window.close(); },// 0
-            function () { print(window.confirm("Esto es una confirmación")); },// 1
-            function () { window.alert("Esto es una alerta"); },// 2
-            function () { print(window.prompt("introduce texto")); },// 3
-            function () { window.open("", "test ventana", "resizable"); },// 4
+            function () { window.close(); },// 0-close()
+            function () { print(window.confirm("Esto es una confirmación")); },// 1-confirm()
+            function () { window.alert("Esto es una alerta"); },// 2-alert()
+            function () { print(window.prompt("introduce texto")); },// 3-prompt()
+            function () { window.open("", "test ventana", "resizable"); },// 4-open()
 
-            function () { print(window.innerHeight); },// 5
-            function () { window.history.back(); },// 6
-            function () { print(window.outerHeight); },// 7
-            function () { print(window.devicePixelRatio); },// 8
-            function () { window.location = "https://www.google.com"; },// 9
+            function () { print(window.innerHeight); },// 5-innerHeight
+            function () { window.history.back(); },// 6-history
+            function () { print(window.outerHeight); },// 7-outerHeight
+            function () { print(window.devicePixelRatio); },// 8-devicePixelRatio
+            function () { window.location = "https://www.google.com"; },// 9-location
 
-            function () { print(screen.availHeight); },// 10
-            function () { print(screen.availWidth); },// 11
-            function () { print(screen.orientation.type); },// 12
-            function () { print(screen.height); },// 13
-            function () { print(screen.width); },// 14
+            function () { print(screen.availHeight); },// 10-availHeight
+            function () { print(screen.availWidth); },// 11-availWidth
+            function () { print(screen.orientation.type); },// 12-orientation
+            function () { print(screen.height); },// 13-height
+            function () { print(screen.width); },// 14-width
 
-            function () { location.assign("https://www.google.com"); },// 15
-            function () { location.reload(); },// 16
-            function () { location.replace("https://www.google.com"); },// 17
-            function () { print(location.toString()); },// 18
+            function () { location.assign("https://www.google.com"); },// 15-assign()
+            function () { location.reload(); },// 16-reload()
+            function () { location.replace("https://www.google.com"); },// 17-replace()
+            function () { print(location.toString()); },// 18-toString()
 
-            function () { location.href = "https://www.google.com"; },// 19
-            function () { print(location.protocol); },// 20
-            function () { location.host = "www.google.com"; },// 21
-            function () { print(location.pathname); },// 22
-            function () { location.search = "busca=true"; },// 23
+            function () { location.href = "https://www.google.com"; },// 19-href
+            function () { print(location.protocol); },// 20-protocol
+            function () { location.host = "www.google.com"; },// 21-host
+            function () { print(location.pathname); },// 22-pathname
+            function () { location.search = "busca=true"; },// 23-search
 
-            function () { navigator.getBattery().then(battery => { print("cargando = " + battery.charging + "<br>bateria = " + battery.level * 100 + "%") }); },// 24
+            function () { navigator.getBattery().then(battery => { print("cargando = " + battery.charging + "<br>bateria = " + battery.level * 100 + "%") }); },// 24-getBattery()
             function () {
                 if (navigator.share) {
                     navigator.share({
@@ -114,7 +114,7 @@
                 } else {
                     alert("navigator.share no disponible");
                 }
-            },// 25
+            },// 25-share()
             function () {
                 let vibraciones = [
                     function () { navigator.vibrate([500, 110, 500, 110, 450, 110, 200, 110, 170, 40, 450, 110, 200, 110, 170, 40, 500]); },
@@ -125,40 +125,42 @@
                 do {
                     num = prompt("introduce un numero del 1 al " + (vibraciones.length), "1") - 1;
                     if (num === null) {
-                        break; //break out of the function early
+                        break;
                     }
                 } while (!(num in vibraciones));
                 vibraciones[num]();
-            },// 26   comando 26 
-            function () { alert(navigator.canShare ? "SI se puede compartir" : "NO se puede compartir") },// 27
-            function () { print(JSON.stringify(navigator.getGamepads())) },// 28
-            function () { print(navigator.cookieEnabled) },// 29
-            function () { print(navigator.hardwareConcurrency) },// 30
-            function () { print(navigator.language) },// 31
+            },// 26-vibrate()
+            function () { alert(navigator.canShare ? "SI se puede compartir" : "NO se puede compartir") },// 27-canShare()
+            function () { print(JSON.stringify(navigator.getGamepads())) },// 28-getGamePads()
+
+            function () { print(navigator.cookieEnabled) },// 29-cookieEnabled
+            function () { print(navigator.hardwareConcurrency) },// 30-hardwareConcurrency
+            function () { print(navigator.language) },// 31-language
             async function () {
                 const { state } = await navigator.permissions.query({
                     name: "notifications"
                 });
                 print("Notificaciones: " + state)
-            },// 32
+            },// 32-permissions
             function () {
                 navigator.clipboard.writeText("texto copiado").then(() => {
                     alert("Copiado en portapapeles");
                 })
-            },// 33
-            function () { window.history.back() },// 34
-            function () { window.history.forward() },// 35
-            function () { window.history.go(-1) },// 36
-            function () {
-                const state = { page_id: 1, user_id: 5 };
-                const url = "/test";
+            },// 33-clipboard
 
+            function () { window.history.back() },// 34-back()
+            function () { window.history.forward() },// 35-forward()
+            function () { window.history.go(-1) },// 36-go()
+            function () {
+                const state = { page_id: 1, user_id: 2 };
+                const url = "/test";
                 history.pushState(state, "test", url);
-            },// 37
-            function () { history.replaceState({}, 'foo', '/foo'); },// 38
-            function () { print(history.length) },// 39
-            function () { print(history.scrollRestoration) },// 40
-            function () { print(history.state) },// 41
+            },// 37-pushState()
+            function () { history.replaceState({}, 'mitest', '/mitest'); },// 38-replaceState()
+
+            function () { print(history.length) },// 39-length
+            function () { print(history.scrollRestoration) },// 40-scrollRestoration
+            function () { print(history.state) },// 41-state
         ];
 
         function ejecutar() {
