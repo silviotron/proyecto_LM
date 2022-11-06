@@ -10,9 +10,11 @@
 </head>
 
 <body>
-    <button onclick="ejecutar()">ejecutar</button>
-    <input type="number" name="num" id="num" value="0" min="0">
-    <p id="p1"></p>
+    <div style="position: sticky; top: 0">
+        <button onclick="ejecutar()">ejecutar</button>
+        <input type="number" name="num" id="num" value="0" min="0">
+        <p id="p1"></p>
+    </div>
     <ol start="0">
         <h1>Window</h1>
         <li>close()</li>
@@ -153,10 +155,10 @@
                 var obj = { Page: "miweb", Url: "https://github.com/silviotron/silviotron.github.io/blob/main/js.html" };
                 history.pushState(obj, obj.Page, obj.Url);
             },// 37
-            function () { },// 38
-            function () { },// 39
-            function () { },// 40
-            function () { },// 41
+            function () { history.replaceState({}, 'foo', '/foo'); },// 38
+            function () { print(History.length) },// 39
+            function () { print(History.scrollRestoration) },// 40
+            function () { print(History.state) },// 41
         ];
 
         function ejecutar() {
