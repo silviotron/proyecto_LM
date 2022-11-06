@@ -10,11 +10,9 @@
 </head>
 
 <body>
-    <div style="position: sticky; top: 0">
-        <button onclick="ejecutar()">ejecutar</button>
-        <input type="number" name="num" id="num" value="0" min="0">
-        <p id="p1"></p>
-    </div>
+    <button onclick="ejecutar()">ejecutar</button>
+    <input type="number" name="num" id="num" value="0" min="0">
+    <p id="p1"></p>
     <ol start="0">
         <h1>Window</h1>
         <li>close()</li>
@@ -152,13 +150,15 @@
             function () { window.history.forward() },// 35
             function () { window.history.go(-1) },// 36
             function () {
-                var obj = { Page: "miweb", Url: "https://github.com/silviotron/silviotron.github.io/blob/main/js.html" };
-                history.pushState(obj, obj.Page, obj.Url);
+                const state = { page_id: 1, user_id: 5 };
+                const url = "www.webtesttrabajo.es.";
+
+                history.pushState(state, "miweb", url);
             },// 37
             function () { history.replaceState({}, 'foo', '/foo'); },// 38
-            function () { print(History.length) },// 39
-            function () { print(History.scrollRestoration) },// 40
-            function () { print(History.state) },// 41
+            function () { print(history.length) },// 39
+            function () { print(history.scrollRestoration) },// 40
+            function () { print(history.state) },// 41
         ];
 
         function ejecutar() {
