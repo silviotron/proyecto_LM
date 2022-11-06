@@ -151,9 +151,9 @@
             function () { window.history.go(-1) },// 36
             function () {
                 const state = { page_id: 1, user_id: 5 };
-                const url = "www.webtesttrabajo.es.";
+                const url = "/test";
 
-                history.pushState(state, "miweb", url);
+                history.pushState(state, "test", url);
             },// 37
             function () { history.replaceState({}, 'foo', '/foo'); },// 38
             function () { print(history.length) },// 39
