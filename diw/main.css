@@ -52,15 +52,15 @@ section {
 }
 
 #obras {
-    background-image: url(fotos/FOTO1.jpg), radial-gradient(#000000e1,black 90%);
+    background-image: url(fotos/FOTO1.jpg), radial-gradient(#000000ab,black 90%);
 }
 
 #noticias {
-    background-image: url(fotos/FOTO2.jpeg), radial-gradient(#000000e1,black 90%);
+    background-image: url(fotos/FOTO2.jpeg), radial-gradient(#000000ab,black 90%);
 }
 
 #contacto {
-    background-image: url(fotos/FOTO3.jpg), radial-gradient(#000000e1,black 90%);
+    background-image: url(fotos/FOTO3.jpg), radial-gradient(#000000ab,black 90%);
 }
 
 .boton{
@@ -126,7 +126,7 @@ div.logo{
     padding: 0 20px 0 20px ;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 5rem;
+    font-size:72px;
     line-height: 1;
     color: #ffeba7;
     text-align: center;
@@ -388,12 +388,16 @@ div.logo{
         content: "";
         width: 100%;
         position: fixed;
-        height: 160px;
+        height: 140px;
         background-color: #353746;
         top: 0;
         left: 0;
         opacity: 80%;
         z-index: 1;
+    }
+    .logo{
+        top: 33px;
+        left: 10px;
     }
     h1 {
         font-size: 9vw;
@@ -411,5 +415,9 @@ div.logo{
         visibility: hidden;
         display: none;
     
+    }
+    .contenido{
+
+        bottom: 1vh;    
     }
 }
