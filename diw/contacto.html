@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The building company</title>
+    <link rel="icon" type="image/png" href="fotos/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="superior">
+    </div>
+    <a href="index.html" class="logo">
+        <div class="logo">
+            TBC
+        </div>
+
+    </a>
+
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon">
+    <label for="menu-icon"></label>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <nav class="lateral">
+        <a href="#telefono" class="lateral-item">
+            <div class="lateral-item"></div>
+        </a>
+        <a href="#email" class="lateral-item">
+            <div class="lateral-item"></div>
+        </a>
+    </nav>
+
+    <section id="telefono">
+        <div class="contenido">
+            <div class="dentro">
+                <h3 class="text-center">Horario telefónico</h3>
+                <table class="table table-borderless">
+                    <tr>
+                        <th>lunes a viernes</th>
+                        <td>8:00H - 20:00H</td>
+                    </tr>
+                    <tr>
+                        <th>sábados</th>
+                        <td>8:00H - 14:00H</td>
+                    </tr>
+                </table>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus scelerisque imperdiet
+                    lorem quis pulvinar. Nam eu viverra neque, et ullamcorper tellus. Vivamus in tellus neque.
+                    Praesent ornare ultrices urna, ac congue nunc tempor in. Duis fringilla nisi mauris, id
+                    congue risus egestas sed. Suspendisse potenti. Cras laoreet ipsum at leo condimentum
+                    viverra.</p>
+                <div class="text-center">
+                    <a class="btn btn-dark" href="tel:123456789">Llamanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mail">
+        <div class="contenido">
+            <div class="dentro">
+                <h2>Contacta por email</h2>
+                <form action="mailto:mail@gmail.com" method="get" enctype="text/plain">
+                    <div class="mb-3">
+                        <label class="form-label" for="nombre">Nombre</label>
+                        <input class="form-control" id="nombre" type="text" placeholder="Nombre" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="email">Email</label>
+                        <input class="form-control" id="email" type="email" placeholder="Email" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" type="text" placeholder="Mensaje"
+                            style="height: 10rem;"></textarea>
+                    </div>
+
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="text-center">
+            <a href="#top" class="btn btn-block rounded-0">Ir arriba</a>
+            <a href="mailto:mail@gmail.com" class="btn btn-block rounded-0">mail@gmail.com</a>
+            <a href="tel:123456789" class="btn btn-block rounded-0">123456789</a>
+        </div>
+    </footer>
+</body>
+
+</html>

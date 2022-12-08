@@ -5,7 +5,7 @@ body {
     font-weight: 300;
     font-size: 15px;
     line-height: 1.7;
-    color: #5f6069;
+    color: #999a9c;
     background-color: #000000;
     width: 100%;
 }
@@ -13,6 +13,10 @@ body {
 
 html {
     width: 100%;
+}
+.table{
+    color: #999a9c;
+    text-align: center;
 }
 /*Lateral*/
 
@@ -59,9 +63,31 @@ section {
     background-image: url(fotos/FOTO2.jpeg), radial-gradient(#000000ab,black 90%);
 }
 
-#contacto {
+#contacto, #mail {
     background-image: url(fotos/FOTO3.jpg), radial-gradient(#000000ab,black 90%);
 }
+#telefono {
+    background-image: url(fotos/FOTO4.jpg), radial-gradient(#000000ab,black 90%);
+}
+#obra1 {
+    background-image: url(fotos/FOTO5.jpg), radial-gradient(#000000ab,black 90%);
+}
+#obra2 {
+    background-image: url(fotos/FOTO6.jpg), radial-gradient(#000000ab,black 90%);
+}
+#obra3 {
+    background-image: url(fotos/FOTO7.jpg), radial-gradient(#000000ab,black 90%);
+}
+#noticia1 {
+    background-image: url(fotos/FOTO8.jpg), radial-gradient(#000000ab,black 90%);
+}
+#noticia2 {
+    background-image: url(fotos/FOTO9.jpg), radial-gradient(#000000ab,black 90%);
+}
+#noticia3{
+    background-image: url(fotos/FOTO10.jpeg), radial-gradient(#000000ab,black 90%);
+}
+
 
 .boton{
     position: relative;
