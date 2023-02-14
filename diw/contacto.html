@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The building company</title>
     <link rel="icon" type="image/png" href="fotos/icono.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -22,7 +21,6 @@
         <div class="logo">
             TBC
         </div>
-
     </a>
 
     <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon">
@@ -47,8 +45,8 @@
     <section id="telefono">
         <div class="contenido">
             <div class="dentro">
-                <h3 class="text-center">Horario telefónico</h3>
-                <table class="table table-borderless">
+                <h2 class="text-center">Horario telefónico</h2>
+                <table class="text-center">
                     <tr>
                         <th>lunes a viernes</th>
                         <td>8:00H - 20:00H</td>
@@ -64,7 +62,7 @@
                     congue risus egestas sed. Suspendisse potenti. Cras laoreet ipsum at leo condimentum
                     viverra.</p>
                 <div class="text-center">
-                    <a class="btn btn-dark" href="tel:123456789">Llamanos</a>
+                    <a class="boton" href="tel:123456789">Llamanos</a>
                 </div>
             </div>
         </div>
@@ -75,42 +73,46 @@
             <div class="dentro">
                 <h2>Contacta por email</h2>
                 <form action="mailto:mail@gmail.com" method="get" enctype="text/plain">
-                    <div class="mb-3">
-                        <label class="form-label" for="nombre">Nombre</label>
-                        <input class="form-control" id="nombre" type="text" placeholder="Nombre" />
+                    <div class="apartado">
+                        <label for="nombre">Nombre</label>
+                        <input class="form-control" id="nombre" type="text" placeholder="tu nombre" />
                     </div>
 
-                    <div class="mb-3">
-                        <label class="form-label" for="email">Email</label>
-                        <input class="form-control" id="email" type="email" placeholder="Email" />
+                    <div class="apartado">
+                        <label for="email">Email</label>
+                        <input class="form-control" id="email" type="email" placeholder="tu email" />
                     </div>
 
-                    <div class="mb-3">
-                        <label class="form-label" for="mensaje">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" type="text" placeholder="Mensaje"
+                    <div class="apartado">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" type="text" placeholder="texto"
                             style="height: 10rem;"></textarea>
-                    </div>
+                    </div><br>
 
-                    <div class="d-grid">
-                        <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
-                    </div>
+                    <button class="boton" type="submit">Enviar</button>
                 </form>
             </div>
         </div>
     </section>
 
-
     <footer>
-        <div class="text-center">
-            <a href="#top" class="btn btn-block rounded-0"><span class="material-symbols-outlined">
-                    arrow_upward
-                </span> Ir arriba</a>
-            <a href="mailto:mail@gmail.com" class="btn btn-block rounded-0"><span class="material-symbols-outlined">
-                    mail
-                </span> mail@gmail.com</a>
-            <a href="tel:123456789" class="btn btn-block rounded-0"><span class="material-symbols-outlined">
-                    call
-                </span> 123456789</a>
+        <div>
+            <a href="#top">
+                <span class="material-symbols-outlined">arrow_upward</span>
+                Ir arriba
+            </a>
+        </div>
+        <div>
+            <a href="mailto:mail@gmail.com">
+                <span class="material-symbols-outlined">mail</span>
+                mail@gmail.com
+            </a>
+        </div>
+        <div>
+            <a href="tel:123456789">
+                <span class="material-symbols-outlined">call</span>
+                123456789
+            </a>
         </div>
     </footer>
 </body>
