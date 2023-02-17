@@ -9,6 +9,7 @@ body {
   background-color: #000000;
   width: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 html {
@@ -57,7 +58,7 @@ section {
 }
 
 #noticias {
-  background-image: url(fotos/FOTO2.jpeg), radial-gradient(#000000ab, black 90%);
+  background-image: url(fotos/FOTO2.jpg), radial-gradient(#000000ab, black 90%);
 }
 
 #contacto,
@@ -83,7 +84,7 @@ section {
   background-image: url(fotos/FOTO9.jpg), radial-gradient(#000000ab, black 90%);
 }
 #noticia3 {
-  background-image: url(fotos/FOTO10.jpeg),
+  background-image: url(fotos/FOTO10.jpg),
     radial-gradient(#000000ab, black 90%);
 }
 
@@ -100,7 +101,9 @@ section {
   width: 100%;
   margin: auto;
   position: absolute;
-  bottom: 10vh;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .dentro {
   width: 70%;
@@ -134,7 +137,7 @@ a.logo:hover,
 a.logo:active {
   text-decoration: none;
 }
-a.logo:hover div {
+div.logo:hover  {
   background-color: #ffeba7;
   color: #353746;
   -webkit-text-stroke: 2px #353746;
@@ -470,6 +473,9 @@ p {
 }
 
 @media screen and (max-width: 991px) {
+  body{
+    padding-top: 140px;
+  }
   .dentro {
     width: 90%;
   }
@@ -505,7 +511,38 @@ p {
     display: none;
   }
   .contenido {
-    bottom: 1vh;
+    padding-bottom: 1vh;
   }
 
+}
+iframe {
+  width: 80%;
+  aspect-ratio: 16/9;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+/*barra horizontal*/
+.progress {
+  height: 3px;
+  width: 0%;
+  background-color: #ffeba7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  animation: progress 1s linear;
+}
+@keyframes progress {
+  to {
+    width: 100%;
+  }
+}
+:root * {
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
 }

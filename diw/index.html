@@ -15,14 +15,15 @@
 </head>
 
 <body>
-    <div class="superior">
+    <div class="progress"></div>
+    <div class="superior"></div>
+    <div class="logo" id="logo">
+        TBC
     </div>
-    <a href="index.html" class="logo">
-        <div class="logo">
-            TBC
-        </div>
-
-    </a>
+    <audio id="sonido">
+        <source src="sierra.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
 
     <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon">
     <label for="menu-icon"></label>
@@ -49,15 +50,17 @@
     <section id="obras">
         <div class="contenido">
             <div class="dentro">
+
                 <h2>Obras</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus scelerisque imperdiet
-                    lorem quis pulvinar. Nam eu viverra neque, et ullamcorper tellus. Vivamus in tellus neque.
-                    Praesent ornare ultrices urna, ac congue nunc tempor in. Duis fringilla nisi mauris, id
-                    congue risus egestas sed. Suspendisse potenti. Cras laoreet ipsum at leo condimentum
-                    viverra. Aliquam sit amet sodales lorem, ac maximus sem. Ut in felis et mauris vestibulum
-                    aliquam. Nunc in dolor fringilla, euismod lacus ac, sodales nunc. Curabitur ut diam nisi.
-                    Donec sem nibh, viverra sit amet tincidunt vel, tristique eget sem. Phasellus egestas tellus
-                    tellus, ac egestas leo volutpat ut. Nullam sed libero sed velit rutrum ultricies.</p>
+                <p>Bienvenidos a la sección de Obras de The Building Company, donde podrán conocer algunas de nuestras
+                    obras más destacadas. A lo largo de los años hemos tenido el honor de participar en proyectos de
+                    construcción de diversas índoles, desde edificios residenciales hasta grandes infraestructuras.</p>
+
+                <p>Entre nuestras obras más destacadas se encuentra el complejo residencial "The Towers", ubicado en el
+                    centro de la ciudad. Con sus impresionantes torres y modernas instalaciones, este complejo es el
+                    hogar de cientos de familias felices. Además, hemos participado en la construcción de numerosos
+                    edificios gubernamentales y comerciales, como el Palacio de Justicia de la ciudad y el centro
+                    comercial "The Plaza".</p>
                 <div class="text-center">
                     <a href="obras.html" class="boton">ver obras</a>
                 </div>
@@ -69,14 +72,12 @@
         <div class="contenido">
             <div class="dentro">
                 <h2>Noticias</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus scelerisque imperdiet
-                    lorem quis pulvinar. Nam eu viverra neque, et ullamcorper tellus. Vivamus in tellus neque.
-                    Praesent ornare ultrices urna, ac congue nunc tempor in. Duis fringilla nisi mauris, id
-                    congue risus egestas sed. Suspendisse potenti. Cras laoreet ipsum at leo condimentum
-                    viverra. Aliquam sit amet sodales lorem, ac maximus sem. Ut in felis et mauris vestibulum
-                    aliquam. Nunc in dolor fringilla, euismod lacus ac, sodales nunc. Curabitur ut diam nisi.
-                    Donec sem nibh, viverra sit amet tincidunt vel, tristique eget sem. Phasellus egestas tellus
-                    tellus, ac egestas leo volutpat ut. Nullam sed libero sed velit rutrum ultricies.</p>
+                <p>En The building company estamos en constante crecimiento y mejora. Mantente informado sobre nuestras
+                    últimas noticias y novedades en esta sección. Aquí encontrarás una selección de nuestras mejores
+                    historias, con fotografías y descripciones detalladas. Desde proyectos terminados con éxito, hasta
+                    la incorporación de nuevas tecnologías en nuestros trabajos, podrás conocer lo último de nuestra
+                    empresa. Síguenos en esta sección y descubre cómo nuestra empresa está revolucionando el mundo de
+                    las obras.</p>
                 <div class="text-center">
                     <a href="noticias.html" class="boton">ver noticias</a>
                 </div>
@@ -88,14 +89,11 @@
         <div class="contenido">
             <div class="dentro">
                 <h2>Contacto</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus scelerisque imperdiet
-                    lorem quis pulvinar. Nam eu viverra neque, et ullamcorper tellus. Vivamus in tellus neque.
-                    Praesent ornare ultrices urna, ac congue nunc tempor in. Duis fringilla nisi mauris, id
-                    congue risus egestas sed. Suspendisse potenti. Cras laoreet ipsum at leo condimentum
-                    viverra. Aliquam sit amet sodales lorem, ac maximus sem. Ut in felis et mauris vestibulum
-                    aliquam. Nunc in dolor fringilla, euismod lacus ac, sodales nunc. Curabitur ut diam nisi.
-                    Donec sem nibh, viverra sit amet tincidunt vel, tristique eget sem. Phasellus egestas tellus
-                    tellus, ac egestas leo volutpat ut. Nullam sed libero sed velit rutrum ultricies.</p>
+                <p>En The building company estamos a tu disposición para responder a cualquier pregunta que puedas tener
+                    acerca de nuestros servicios de obra. En esta sección encontrarás nuestros horarios de atención
+                    telefónica y un formulario de contacto para que puedas escribirnos un correo electrónico. También
+                    puedes visitarnos en nuestras oficinas, donde estaremos encantados de recibirte y escuchar tus
+                    necesidades. Contáctanos y descubre cómo podemos ayudarte en tu próximo proyecto.</p>
                 <div class="text-center">
                     <a href="contacto.html" class="boton">Contactar</a>
                 </div>
@@ -124,5 +122,17 @@
         </div>
     </footer>
 </body>
+<script>
+    window.addEventListener('scroll', () => {
+        document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+    }, false);
+
+
+    document.getElementById('logo').addEventListener('click', function () {
+        document.getElementById('sonido').play()
+    })
+
+
+</script>
 
 </html>

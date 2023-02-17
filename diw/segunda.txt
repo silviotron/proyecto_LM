@@ -1,0 +1,61 @@
+1.a.I 
+son imágenes vectoriales porque utilizo archivos jpg.
+1.a.II
+si, porque los soportan todos los navegadores y estan optimizados ya que uso .jpg, el cual ocupa menos especio a costa de perder un poco de calidad dando pie a una carga mas veloz.
+1.a.III
+abri la web de conversion, subi el archivo de audio sierra.wav y seleccione convertirlo a mp3, lo converti y lo descargue.
+1.a.IV
+registraria la propiedad, determinaria la licencia y colocaria una nota de derechos de autor en la web.
+
+1.b.I
+hay un video de youtube con iframe en cada seccion de obras representando cada obra.
+en el index si le das al boton del logo suena un sonido de una sierra circular cortando .
+
+1.c.I
+una animación de una barra horizontal en la parte superior vinculada al scroll lateral
+
+1.D.I
+tengo varios elementos interactivos que ya estaban incluidos procedo a nombrar 3:
+-el boton del logo que se encuentran en la esquina superior izquierda que tienen un hover que intercambia sus colores.
+-los botones situados en cada seccion que son enlaces que tienen un hover que los pone mas oscuros.
+-los enlaces a las paginas del menu que tienen un hover que tiene una transicion muy animada.
+el sentido de estos elementos es permitir a los usuarios interactuar con el contenido y que la experiencia del usuario sea mas atractiva y agradable.
+
+1.e.I
+actualizada.
+
+2.a
+-Que tenga una organización clara y jerarquizada de la información para que los usuarios puedan encontrarla facilmente.
+-Que los enlaces internos y externos sean claros y descriptivos para que los usuarios sepan a donde van a acceder.
+-Que el diseño sea consistente para que los usuarios identifiquen facilmente los elementos de navegación.
+-Que se use un lenguaje sencillo y facil de entender.
+-Que se usen imágenes y multimedia para ayudar al entendimiento de la web.
+-Que tenga un diseño web adaptable para diferentes dispositivos y tamaños de pantalla.
+
+2.b
+Si ya que mi web cumple con la gran mayoria de los elementos del checklist de usabilidad de los apuntes facilitando asi su usabilidad para todos los usuarios.
+
+2.c
+-He añadido texto claro, y con una redaccion correcta a el apartado de obras, al de noticias y al de contacto.
+-he añadido nombres descriptivos a cda uno de los enlaces de las secciones.  
+-he creado una descripcion de ayuda.
+
+2.d
+He creado un formulario de google para conseguir feedback de la pagina
+https://forms.gle/CWPbzComYjmgsSds8
+
+
+2.e
+-
+https://docs.google.com/document/d/1q2l0tKOR20pE3e6Q7sbI90VvFKiZmM9suCPJpBE9nUs/edit
+3.a
+-
+
+3.b
+-
+
+3.c
+-
+
+3.d
+-
