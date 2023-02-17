@@ -538,11 +538,15 @@ iframe {
   }
 }
 :root * {
-  /* Pause the animation */
+  /* Pausar la animacion */
   animation-play-state: paused;
-  /* Bind the animation to scroll */
+  /* Asociar la animacion al scroll */
   animation-delay: calc(var(--scroll) * -1s);
-  /* These last 2 properites clean up overshoot weirdness */
+
   animation-iteration-count: 1;
   animation-fill-mode: both;
+}
+/*que se vea el focus en el label*/
+a.logo:focus div, .focusable:focus + label{
+  box-shadow: 0 0 10px 5px #08F;
 }
